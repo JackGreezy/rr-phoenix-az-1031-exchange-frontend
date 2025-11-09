@@ -1,0 +1,183 @@
+"use client";
+
+import { Suspense, useEffect, useRef } from "react";
+import { useSearchParams } from "next/navigation";
+import { motion } from "framer-motion";
+import { Breadcrumbs } from "@/components/navigation/breadcrumbs";
+import { ContactForm } from "@/components/forms/contact-form";
+import {
+  PRIMARY_CITY,
+  PRIMARY_STATE_ABBR,
+  SITE_DOMAIN,
+  GOOGLE_MAP_EMBED,
+  PHONE_NUMBER,
+  PHONE_NUMBER_URI,
+  SUPPORT_EMAIL,
+  OFFICE_ADDRESS_LINE_1,
+  OFFICE_ADDRESS_LINE_2,
+} from "@/lib/config";
+
+const fadeInProps = {
+  initial: { opacity: 0, y: 32 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, amount: 0.2 },
+  transition: { duration: 0.7, ease: [0.4, 0, 0.2, 1] as const },
+};
+
+function ContactPageContent() {
+  const searchParams = useSearchParams();
+  const formRef = useRef<HTMLDivElement>(null);
+  const projectTypeParam = searchParams.get("projectType");
+
+  useEffect(() => {
+    if (projectTypeParam && formRef.current) {
+      setTimeout(() => {
+        formRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+        const projectTypeInput = document.getElementById(
+          "project-type"
+        ) as HTMLInputElement;
+        if (projectTypeInput) {
+          projectTypeInput.focus();
+          projectTypeInput.value = projectTypeParam;
+        }
+      }, 100);
+    }
+  }, [projectTypeParam]);
+
+  return (
+    <div className="min-h-screen bg-[#F5F3EF]">
+      <div className="relative mx-auto max-w-6xl px-6 pb-24 pt-8 sm:px-10 lg:px-16">
+        <Breadcrumbs
+          items={[
+            { label: "Home", href: "/" },
+            { label: "Contact", href: "/contact" },
+          ]}
+        />
+
+        <motion.section {...fadeInProps} className="space-y-10 pt-8">
+          <header className="max-w-3xl space-y-4">
+            <h1 className="font-playfair text-4xl font-bold text-[#2A2A2A] sm:text-5xl">
+              Contact Us
+            </h1>
+            <p className="text-base text-[#2A2A2A]/75 sm:text-lg">
+              Discuss your 1031 exchange timeline and replacement property
+              objectives with our {PRIMARY_CITY} team.
+            </p>
+          </header>
+
+          <div className="grid gap-10 lg:grid-cols-2">
+            <div ref={formRef} id="contact-form-section">
+              <ContactForm initialProjectType={projectTypeParam || undefined} />
+            </div>
+
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <h2 className="font-playfair text-2xl font-bold text-[#2A2A2A]">
+                  Get in Touch
+                </h2>
+                <p className="text-base text-[#2A2A2A]/75">
+                  Our team is available 24 hours a day, seven days a week to
+                  assist with your exchange questions.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <div>
+                  <h3 className="font-inter text-lg font-medium text-[#2A2A2A]">
+                    Phone
+                  </h3>
+                  <a
+                    href={`tel:${PHONE_NUMBER_URI}`}
+                    className="text-base text-[#006E7F] underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#006E7F]"
+                  >
+                    {PHONE_NUMBER}
+                  </a>
+                </div>
+
+                <div>
+                  <h3 className="font-inter text-lg font-medium text-[#2A2A2A]">
+                    Email
+                  </h3>
+                  <a
+                    href={`mailto:${SUPPORT_EMAIL}`}
+                    className="text-base text-[#006E7F] underline-offset-4 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#006E7F]"
+                  >
+                    {SUPPORT_EMAIL}
+                  </a>
+                </div>
+
+                <div>
+                  <h3 className="font-inter text-lg font-medium text-[#2A2A2A]">
+                    Hours
+                  </h3>
+                  <p className="text-base text-[#2A2A2A]/75">
+                    24 hours a day, seven days a week
+                  </p>
+                </div>
+              </div>
+
+              <div className="rounded-2xl border border-white/70 bg-white/70 p-6 shadow-[0_12px_40px_rgba(24,24,24,0.06)]">
+                <h3 className="font-inter text-lg font-medium text-[#2A2A2A]">
+                  Office Location
+                </h3>
+                <p className="mt-2 text-sm text-[#2A2A2A]/75">
+                  {OFFICE_ADDRESS_LINE_1}
+                  <br />
+                  {OFFICE_ADDRESS_LINE_2}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative aspect-video overflow-hidden rounded-2xl">
+            <iframe
+              src={GOOGLE_MAP_EMBED}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title={`Map of ${PRIMARY_CITY}, ${PRIMARY_STATE_ABBR}`}
+              className="absolute inset-0"
+            />
+          </div>
+        </motion.section>
+      </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            name: "Contact Us",
+            url: `${SITE_DOMAIN}/contact`,
+            mainEntity: {
+              "@type": "Organization",
+              name: "1031 Exchange of Phoenix",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: OFFICE_ADDRESS_LINE_1,
+                addressLocality: PRIMARY_CITY,
+                addressRegion: PRIMARY_STATE_ABBR,
+                postalCode: "85024",
+              },
+              telephone: PHONE_NUMBER_URI,
+              email: SUPPORT_EMAIL,
+            },
+          }),
+        }}
+      />
+    </div>
+  );
+}
+
+export default function ContactPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-[#F5F3EF]" />}>
+      <ContactPageContent />
+    </Suspense>
+  );
+}
+

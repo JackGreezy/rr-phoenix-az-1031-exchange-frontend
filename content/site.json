@@ -1,0 +1,16 @@
+{
+  "company": "1031 Exchange of Phoenix",
+  "phone": "(602) 669-7981",
+  "phoneDigits": "6026697981",
+  "mainCity": "Phoenix",
+  "state": "AZ",
+  "services": [],
+  "servicesNav": [],
+  "locationsNav": [],
+  "extraLinks": [
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ]
+}
