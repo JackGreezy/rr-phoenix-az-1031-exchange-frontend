@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Source_Sans_3, Inter } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
