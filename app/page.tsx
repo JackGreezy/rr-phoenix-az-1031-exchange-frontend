@@ -422,46 +422,32 @@ export default function Page() {
             <div className="relative">
               <div className="absolute -right-6 -top-6 h-24 w-24 rounded-full border border-[#E6A445]/30" />
               <div className="absolute -bottom-6 -left-10 h-32 w-32 rounded-full border border-[#006E7F]/25" />
-              <div className="relative overflow-hidden rounded-3xl border border-white/60 bg-gradient-to-br from-[#F5F3EF] via-white to-[#F5F3EF] p-6 shadow-[0_20px_60px_rgba(24,24,24,0.12)]">
-                <svg
-                  role="img"
-                  aria-labelledby="hero-visual-title"
-                  viewBox="0 0 480 320"
-                  className="h-full w-full text-[#E6A445]/35"
-                >
-                  <title id="hero-visual-title">
-                    Phoenix skyline silhouette under warm desert light.
-                  </title>
-                  <defs>
-                    <linearGradient
-                      id="skyGradient"
-                      x1="0%"
-                      y1="0%"
-                      x2="100%"
-                      y2="100%"
-                    >
-                      <stop offset="0%" stopColor="#F5F3EF" />
-                      <stop offset="100%" stopColor="#ffffff" />
-                    </linearGradient>
-                  </defs>
-                  <rect width="480" height="320" fill="url(#skyGradient)" />
-                  <g fill="#E6A445" opacity="0.6">
-                    <rect x="40" y="140" width="32" height="120" />
-                    <rect x="90" y="120" width="42" height="140" />
-                    <rect x="150" y="90" width="48" height="170" />
-                    <rect x="214" y="70" width="42" height="190" />
-                    <rect x="268" y="110" width="52" height="150" />
-                    <rect x="332" y="130" width="38" height="130" />
-                    <rect x="382" y="100" width="46" height="160" />
-                  </g>
-                  <rect
-                    y="260"
-                    width="480"
-                    height="60"
-                    fill="#006E7F"
-                    opacity="0.18"
-                  />
-                </svg>
+              <div className="relative overflow-hidden rounded-3xl border border-white/60 bg-gradient-to-br from-[#F5F3EF] via-white to-[#F5F3EF] p-8 shadow-[0_20px_60px_rgba(24,24,24,0.12)]">
+                <div className="space-y-6">
+                  <div className="rounded-full bg-[#006E7F]/10 px-6 py-3 text-center text-sm font-semibold text-[#006E7F]">
+                    45 Day identification. 180 Day closing. We help you stay compliant.
+                  </div>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3 rounded-2xl border border-[#2A2A2A]/10 bg-white/80 px-5 py-4 shadow-sm">
+                      <MapPinIcon className="h-5 w-5 flex-shrink-0 text-[#E6A445]" aria-hidden="true" />
+                      <span className="text-base font-semibold text-[#2A2A2A]">
+                        Property Identification Support
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-3 rounded-2xl border border-[#2A2A2A]/10 bg-white/80 px-5 py-4 shadow-sm">
+                      <ClockIcon className="h-5 w-5 flex-shrink-0 text-[#E6A445]" aria-hidden="true" />
+                      <span className="text-base font-semibold text-[#2A2A2A]">
+                        45-Day Deadline Tracking
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-3 rounded-2xl border border-[#2A2A2A]/10 bg-white/80 px-5 py-4 shadow-sm">
+                      <SearchIcon className="h-5 w-5 flex-shrink-0 text-[#E6A445]" aria-hidden="true" />
+                      <span className="text-base font-semibold text-[#2A2A2A]">
+                        Replacement Property Sourcing
+                      </span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
