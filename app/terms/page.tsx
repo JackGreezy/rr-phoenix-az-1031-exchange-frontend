@@ -63,7 +63,7 @@ export default function TermsPage() {
                 Disclaimer
               </h2>
               <p className="mt-4 text-base leading-relaxed text-mansion-charcoal/80">
-                The materials on {COMPANY_NAME}'s website are provided on an 'as is' basis. {COMPANY_NAME} makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+                The materials on {COMPANY_NAME}'s website are provided on an 'as is' basis. {COMPANY_NAME} makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement or other violation of rights.
               </p>
               <p className="mt-4 text-base leading-relaxed text-mansion-charcoal/80">
                 Further, {COMPANY_NAME} does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.
