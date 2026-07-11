@@ -1,0 +1,66 @@
+{
+ "slug": "qualified-intermediary-coordination",
+ "taxonomy": "services",
+ "title": "Qualified Intermediary Coordination",
+ "name": "Qualified Intermediary Coordination",
+ "metaTitle": "Qualified Intermediary Coordination in Phoenix, AZ",
+ "metaDescription": "Coordinating your qualified intermediary, escrow, and title timelines for a Phoenix 1031 exchange so exchange funds never touch your hands.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>The qualified intermediary is the piece of a 1031 exchange most investors get right on paper and wrong on timing. We coordinate the paperwork against the Maricopa County closing calendar so nothing sits idle waiting on a signature.</p>"
+  },
+  {
+   "heading": "Why the QI Has to Be In Place Before You Close",
+   "html": "<p>Your qualified intermediary needs to be assigned into the sale contract on the relinquished property before that closing happens, not after. If sale proceeds land in your account even briefly, that's constructive receipt and it can undo the exchange. We confirm the QI assignment and escrow instructions with your title company well before the closing date.</p>"
+  },
+  {
+   "heading": "How This Runs Against a Phoenix Closing",
+   "html": "<p>Title and escrow work in Maricopa County moves on its own schedule, and we've coordinated enough of these to know where the delays usually show up: last-minute lender payoff figures, HOA or municipal lien clearances, and assignment paperwork that gets drafted too late to route for signature. We build the QI handoff into the closing timeline from the start instead of bolting it on at the end.</p>"
+  },
+  {
+   "heading": "What We Coordinate Directly",
+   "html": "<p>On a typical exchange we're managing these pieces alongside your QI and title company:</p><ul><li>Assignment of the relinquished property sale contract to the QI</li><li>Assignment of the replacement property purchase contract to the QI</li><li>Escrow instructions confirming funds route through the QI, not you</li><li>Coordination of the exchange agreement signing date against closing</li><li>Confirmation of wire instructions directly with the QI, never by email alone</li></ul><p>That last point matters. Wire fraud targeting exchange funds is real, and we verify wire instructions by phone before any transfer.</p>"
+  },
+  {
+   "heading": "Where This Meets the 45-Day and 180-Day Clocks",
+   "html": "<p>The relinquished property closing date starts both clocks: forty-five days to identify replacement property in writing to your QI, and one hundred eighty days total to close on the replacement. We track both dates against the coordination work above so nothing slips past deadline because paperwork was still moving.</p><p>We are not your qualified intermediary and we don't give tax advice. Your QI holds the exchange funds and your CPA confirms the tax treatment; we keep the moving pieces lined up on schedule.</p>"
+  },
+  {
+   "heading": "What Goes Wrong Without This Coordination",
+   "html": "<p>The most common failure we see is an investor who lines up a QI late, after the relinquished sale contract is already signed without the assignment language in it. Fixing that after the fact is possible but adds risk and stress that a five-minute conversation up front would have avoided.</p><p>A second failure shows up on the replacement side: an investor signs a purchase contract for a Phoenix property without confirming the QI is assigned there too, then discovers at closing that escrow doesn't have proper instructions on file. That kind of scramble at the closing table is avoidable with a short call two weeks earlier.</p>"
+  },
+  {
+   "heading": "Choosing a Qualified Intermediary in the First Place",
+   "html": "<p>Not every QI operates the same way, and the differences show up most when a deal gets complicated, a reverse exchange, a multi-property identification, or a closing that slips a few days. We look at how responsive a QI has been on past Phoenix closings, whether they hold exchange funds in a qualified escrow or trust account, and whether they carry fidelity bond coverage on those funds.</p><p>We don't select your qualified intermediary for you, that decision is yours, but we flag questions worth asking before you engage one, since switching QIs mid-exchange is far more disruptive than picking carefully at the start.</p>"
+  },
+  {
+   "heading": "How a Typical Phoenix Closing Sequence Runs With a QI in Place",
+   "html": "<p>On a recent exchange out of a Phoenix retail property, we had the QI assignment language in the sale contract before it was even circulated for signature. Escrow instructions naming the QI went out to the title company the same week the contract was signed, not the week of closing. When the relinquished sale closed, funds moved directly into the QI's escrow account, and the investor had a clean forty-five days to work with rather than losing several of them sorting out paperwork that should have been settled already.</p><p>That sequence is the difference between a coordinated exchange and one that's improvised as deadlines approach. We build every Phoenix closing toward that same sequence, regardless of asset type or deal size.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "When does my qualified intermediary need to be assigned into my sale contract?",
+   "a": "Before the relinquished property closes, ideally as soon as you sign the sale contract. Waiting until the week of closing adds unnecessary risk to the exchange."
+  },
+  {
+   "q": "What happens if exchange proceeds touch my personal account, even briefly?",
+   "a": "That can trigger constructive receipt, which can disqualify the exchange. Funds need to route through the qualified intermediary's escrow the entire time, with no exception."
+  },
+  {
+   "q": "How do you verify wire instructions on a Phoenix exchange closing?",
+   "a": "We confirm wire details directly by phone with the qualified intermediary and title company, never relying on email alone, since exchange funds are a common wire fraud target."
+  },
+  {
+   "q": "Does the qualified intermediary calculate my taxes or boot exposure?",
+   "a": "No. The QI holds and moves the funds under the exchange agreement; your CPA or tax advisor confirms the tax treatment and boot calculation. We coordinate between the two."
+  },
+  {
+   "q": "What's the biggest coordination mistake you see on Phoenix exchanges?",
+   "a": "Signing the relinquished sale contract before the qualified intermediary is assigned into it. We push to get that assignment language in place before any contract is signed."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 850
+}

@@ -1,0 +1,70 @@
+{
+ "slug": "tax-advisor-and-cpa-coordination",
+ "taxonomy": "services",
+ "title": "Tax Advisor and CPA Coordination",
+ "name": "Tax Advisor and CPA Coordination",
+ "metaTitle": "Tax Advisor and CPA Coordination in Phoenix, AZ",
+ "metaDescription": "Coordinating between your CPA, tax advisor, and qualified intermediary on a Phoenix 1031 exchange so property sourcing and tax review stay in sync.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>We source and underwrite Phoenix replacement property. We don't calculate your taxes. This page is about how those two lanes stay coordinated so nothing falls between them.</p>"
+  },
+  {
+   "heading": "Where the Line Sits Between Us and Your CPA",
+   "html": "<p>We tell you what a building rents for, what it costs to run, and whether the tenant mix holds up. Your CPA or tax advisor tells you how basis carries over, what depreciation recapture looks like, and whether a specific price or debt level creates taxable boot. We keep those roles separate on purpose, because getting sourcing advice and tax advice from the same source usually means one of them is being done casually.</p>"
+  },
+  {
+   "heading": "What We Send Your CPA Before You Decide",
+   "html": "<p>Once we've narrowed candidates to a short list, we package the property details your tax advisor actually needs: purchase price, projected debt level, closing cost estimates, and how those compare to your relinquished property's sale price and debt payoff. That package is what lets your CPA check boot exposure quickly instead of chasing numbers from three different sources.</p>"
+  },
+  {
+   "heading": "The Coordination Points That Matter Most",
+   "html": "<p>On a typical Phoenix exchange, we're syncing with your tax advisor at these specific points:</p><ul><li>Before you finalize your written identification, on price and debt fit</li><li>Before you sign a purchase contract, on closing cost and timing details</li><li>Around depreciation recapture questions specific to the relinquished property</li><li>On any out-of-state tax exposure if the relinquished property wasn't in Arizona</li><li>Before wire instructions are confirmed, purely for timeline awareness, not tax review</li></ul><p>That out-of-state item comes up often, since a number of Phoenix exchangers are moving capital in from California or other states with different reporting requirements.</p>"
+  },
+  {
+   "heading": "Why We Don't Blur This Line",
+   "html": "<p>An investor asking us whether a specific deal will create boot is really asking a tax question in a sourcing conversation. We answer the sourcing half honestly, price and debt facts, and hand the boot calculation itself to your CPA, because that number depends on your full tax picture, well beyond the one property in front of you.</p>"
+  },
+  {
+   "heading": "Getting Everyone on the Same Timeline",
+   "html": "<p>The forty-five-day identification window and one-hundred-eighty-day closing deadline don't leave much room for your CPA to review a deal after the fact. We loop your tax advisor in as soon as a property looks like a real candidate, not after you've already identified it, so their review happens with time to actually matter.</p>"
+  },
+  {
+   "heading": "How This Looks on a Recent Exchange",
+   "html": "<p>On a recent exchange involving a sale out of state and a purchase of West Valley industrial property, the investor's CPA needed to weigh in on a depreciation recapture question tied to how the relinquished property had been depreciated over several years, plus an out-of-state withholding question triggered by the sale itself. We sent our property package, price, debt terms, closing costs, to the CPA as soon as the industrial candidate looked like a real contender, well before the identification deadline, so the CPA had time to work through both questions without rushing.</p><p>That lead time is the whole point of keeping this coordination structured rather than informal. A tax question surfaced on day forty-four of the identification window leaves almost no room to adjust the deal if the answer changes anything.</p>"
+  },
+  {
+   "heading": "What Happens When Coordination Slips",
+   "html": "<p>We've seen exchanges where an investor didn't loop in their CPA until after signing a purchase contract, only to learn that the price and debt structure created more boot exposure than expected. The exchange still closed, but the investor had fewer options to adjust the numbers at that point than if the CPA had been in the loop from the candidate stage. That's the scenario this coordination exists to prevent.</p>"
+  },
+  {
+   "heading": "What We Expect From You in This Process",
+   "html": "<p>Coordination works best when you give us your CPA's contact information early and give your CPA a heads-up that a property package is coming. We can't compress a tax review into the last week of the identification window if your advisor is hearing about the exchange for the first time on day forty. A short introduction call at the start saves everyone the scramble later.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Do you calculate whether a replacement property will create taxable boot?",
+   "a": "No. We provide the price, debt, and closing cost facts; your CPA or tax advisor calculates boot exposure based on your complete exchange picture, which we don't have full visibility into."
+  },
+  {
+   "q": "When should I bring my CPA into the property search?",
+   "a": "As soon as a candidate looks like a real contender, ideally before it reaches your final identification list. Bringing your CPA in after identification leaves little time to react if a problem turns up."
+  },
+  {
+   "q": "What information do you send my tax advisor about a candidate property?",
+   "a": "Purchase price, projected debt level, and closing cost estimates, compared against your relinquished property's sale price and payoff. That's usually what a CPA needs to check boot exposure quickly."
+  },
+  {
+   "q": "Does it matter if my relinquished property was outside Arizona?",
+   "a": "It can affect reporting requirements depending on the states involved. That's a tax question for your advisor, and we flag it early when we know the relinquished property was out of state."
+  },
+  {
+   "q": "Why won't you just tell me if a deal is a good tax move?",
+   "a": "Because that's a full-picture tax question, not a sourcing question, and we only see the property side. Your CPA has the rest of your tax situation and is the right person to answer it."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 850
+}

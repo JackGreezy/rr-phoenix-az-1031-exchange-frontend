@@ -1,0 +1,66 @@
+{
+ "slug": "form-8824-preparation-support",
+ "taxonomy": "services",
+ "title": "Form 8824 Preparation Support",
+ "name": "Form 8824 Preparation Support",
+ "metaTitle": "Form 8824 Preparation Support in Phoenix, AZ",
+ "metaDescription": "What Form 8824 reports for a Phoenix 1031 exchange, the numbers that feed it, and how to have the file ready before your tax advisor needs it.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Form 8824 is the document the IRS uses to report a like-kind exchange, filed with the tax return for the year the exchange closed. It is not optional paperwork; it is where realized gain, recognized gain, and the new basis on a Phoenix replacement property all get calculated.</p>"
+  },
+  {
+   "heading": "What Form 8824 Actually Reports",
+   "html": "<p>The form walks through a description of both properties, the dates the relinquished property was given up and the replacement property was received, the fair market values, any liabilities assumed or relieved, and any boot received. From those inputs it calculates realized gain, how much of that gain is currently recognized as taxable, and the carryover basis on the new property.</p><p>Every number on the form ties back to a document somewhere in the closing file, which is why the paperwork from both sides of a Phoenix trade needs to stay organized from day one.</p><p>Multi-asset exchanges, where a Phoenix investor identifies several replacement properties under the 200% or 95% rules, may require additional reporting detail to separate the basis and gain allocated to each individual property rather than treating the whole trade as one transaction.</p>"
+  },
+  {
+   "heading": "Where Phoenix Investors Get the Numbers Wrong",
+   "html": "<p>The most common error shows up on trades where debt changed significantly, like a Camelback office sale where the investor paid off a large loan and financed a smaller amount on the replacement. If the debt-reduction boot from that gap is not calculated correctly, the recognized gain on the form ends up wrong, and so does the return.</p><p>The second common error is basis carryover. The adjusted basis on the replacement property is not simply the purchase price; it carries over adjusted basis from the relinquished property plus any additional investment, minus any boot received. Getting this wrong understates or overstates depreciation on the Phoenix replacement property for years afterward.</p><p>A third error shows up when exchange expenses, such as qualified intermediary fees, are not properly credited against the calculation. These costs can reduce recognized gain if handled correctly, but only if they are tracked through the file rather than lumped in with unrelated closing costs.</p>"
+  },
+  {
+   "heading": "Lining Up the File Before Tax Season",
+   "html": "<p>Before your CPA sits down with Form 8824, have these numbers ready in one place:</p><ul><li>Closing date and sale price of the relinquished property</li><li>Closing date and purchase price of the replacement property</li><li>Adjusted basis of the relinquished property at time of sale</li><li>Liabilities paid off versus liabilities assumed on the replacement side</li><li>Any cash boot received during the exchange</li><li>Qualified intermediary fees and other exchange-related costs</li></ul>"
+  },
+  {
+   "heading": "Working With Your CPA Instead of Around Them",
+   "html": "<p>This form is not something to reconstruct from memory in March. The qualified intermediary's closing file and the settlement statements from both transactions should go straight to your tax advisor as soon as the replacement property closes, not after the deadline for filing is already close.</p><p>Confirm with your tax advisor exactly which numbers they need pulled and in what format, especially on a Phoenix trade where the debt or boot picture is not simple.</p>"
+  },
+  {
+   "heading": "A Simplified Walkthrough of the Calculation",
+   "html": "<p>A Phoenix investor selling a relinquished property with an adjusted basis of one million dollars for three million, and buying a replacement for three-point-one million with no boot received, would generally show a realized gain of two million dollars but recognize none of it currently, since no boot exists. The new basis on the replacement carries over the original one-million-dollar basis, adjusted for the extra hundred thousand dollars invested.</p><p>Change any one of those inputs, add cash boot or a debt gap, and the recognized gain and new basis both shift, which is why the underlying numbers matter more than the form itself.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "When does Form 8824 need to be filed?",
+   "a": "It is filed with the tax return for the year in which the relinquished property was sold, even if the replacement closing happened in the following calendar year under the 180-day rule."
+  },
+  {
+   "q": "What is the difference between realized gain and recognized gain on the form?",
+   "a": "Realized gain is the full economic gain on the trade. Recognized gain is the portion of that gain that is actually taxable in the current year, generally limited to any boot received."
+  },
+  {
+   "q": "Does Form 8824 calculate my new basis automatically?",
+   "a": "The form walks through the calculation, but the inputs, especially adjusted basis on the relinquished property and any boot received, have to be accurate for the resulting basis figure to be correct."
+  },
+  {
+   "q": "What documents does my CPA need to complete this form?",
+   "a": "Settlement statements from both closings, the exchange agreement with the qualified intermediary, the identification notice, and records of adjusted basis on the relinquished property."
+  },
+  {
+   "q": "Can I prepare Form 8824 myself without a tax advisor?",
+   "a": "It is possible, but the basis and boot calculations are easy to get wrong, especially on trades involving debt changes. Most Phoenix investors are better served having a tax advisor review or prepare the form directly."
+  },
+  {
+   "q": "What if I identified multiple properties but only acquired one?",
+   "a": "Form 8824 reports only the properties actually acquired, not every candidate on the original identification list. The unused candidates simply do not appear on the return, though the qualified intermediary's file should still document why they were not purchased."
+  },
+  {
+   "q": "Does an improvement exchange change how Form 8824 is completed?",
+   "a": "Yes. The value of completed improvements needs to be reflected in the replacement property's fair market value and basis figures, which requires additional documentation from the accommodation titleholder and contractor records for a Phoenix build-to-suit exchange."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 885
+}

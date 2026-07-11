@@ -1,0 +1,66 @@
+{
+ "slug": "market-comparable-analysis",
+ "taxonomy": "services",
+ "title": "Market Comparable Analysis",
+ "name": "Market Comparable Analysis",
+ "metaTitle": "Market Comparable Analysis in Phoenix, AZ",
+ "metaDescription": "How Phoenix exchange investors use verified sale comps to support identification value calculations, basis work, and replacement property decisions.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Comparable sales data does more in a 1031 exchange than help set an asking price. It supports the value math behind the identification rules and gives a tax advisor something defensible to point to when Form 8824 asks for fair market value on a Phoenix property.</p><p>A thin or sloppy comp file causes problems well after closing, not merely during negotiation, so it is worth treating the same way as any other piece of the exchange paperwork rather than an afterthought.</p>"
+  },
+  {
+   "heading": "Why Comps Matter Beyond Just Setting a Price",
+   "html": "<p>An investor identifying more than three properties under the 200% rule needs a real fair market value estimate for every candidate, not a rough guess, since going over the cap can unravel the whole identification. A tax advisor reconciling basis and boot after closing also needs comparable data to support the numbers that end up on the Phoenix investor's return.</p><p>A lender preflighting a purchase will also pull independent comps during underwriting, and a Phoenix investor whose own numbers do not line up with the lender's appraisal can lose time renegotiating a deal that looked settled.</p>"
+  },
+  {
+   "heading": "Reading the Numbers Across Different Phoenix Submarkets",
+   "html": "<p>Office comps along Camelback and the Biltmore corridor behave differently than industrial comps in the West Valley, and both behave differently than multifamily comps in Tempe or Mesa, where in-migration has kept demand steady even as financing costs shift across the broader Phoenix metro. A comp that looked strong three months ago in one submarket may not hold up today in another, so pulling data specific to the actual submarket matters more than a citywide average.</p><p>Land comps on the growth edges of the metro move to yet another rhythm entirely, often driven by entitlement status and infrastructure timing rather than the leasing fundamentals that drive office or multifamily pricing closer to central Phoenix.</p>"
+  },
+  {
+   "heading": "What Makes a Comp Actually Usable in an Exchange File",
+   "html": "<p>A comp pulled from a database without checking the underlying sale details is worth very little once someone follows up with a question about it. Not every reported sale belongs in the analysis. A usable comp generally needs:</p><ul><li>A sale date recent enough to reflect current market conditions</li><li>A similar asset class and comparable building size or unit count</li><li>Location within the same or a genuinely comparable submarket</li><li>A verified closing price, not a listing or asking price</li><li>Documented adjustments for condition, age, or lease terms</li></ul>"
+  },
+  {
+   "heading": "Keeping the Comp File Ready for Your CPA and QI",
+   "html": "<p>Land comps out toward Buckeye and the edge of Casa Grande move on a slower cycle than office or industrial, which means fewer recent transactions to draw from and more judgment involved in adjusting older sales. Whatever the asset class, keep a written record of the comps used and the source for each one, since both the qualified intermediary and the tax advisor may need to reference that file later on a Phoenix-area exchange.</p>"
+  },
+  {
+   "heading": "A Submarket Comparison Walkthrough",
+   "html": "<p>Picture two office comps a Phoenix investor might pull for the same identification candidate: one sale near Camelback and 24th Street from four months ago, and one from the Biltmore corridor closed last year. The Camelback sale is more recent and closer in proximity, but the Biltmore building was a larger floor plate with different parking ratios, so neither comp is automatically the better one without adjusting for those differences.</p><p>The investor who documents those adjustments, rather than just picking whichever number supports the value they want, ends up with a file that holds up when the tax advisor or qualified intermediary asks how the number was reached.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Why do I need comps if I already have an appraisal?",
+   "a": "Comps support the appraisal and can be pulled quickly to check value ranges on multiple identification candidates before a formal appraisal is ordered on the top choice."
+  },
+  {
+   "q": "Should I use citywide averages or submarket-specific data?",
+   "a": "Submarket-specific data. Camelback office, West Valley industrial, and Tempe multifamily all move on different cycles, and a citywide Phoenix average can mask real differences between them."
+  },
+  {
+   "q": "What makes a sale comp unreliable?",
+   "a": "An asking price instead of a verified closing price, a sale date too far in the past, or a property in a genuinely different submarket or condition all weaken a comp's usefulness."
+  },
+  {
+   "q": "Do I need a licensed appraiser to pull comps for identification purposes?",
+   "a": "Not necessarily at the identification stage, but the fair market value estimates used for the 200% or 95% rule math should be defensible, and a professional appraisal is often worth ordering before final closing."
+  },
+  {
+   "q": "How far back should sale comps go?",
+   "a": "As recent as possible, especially in fast-moving submarkets like Phoenix's West Valley industrial corridor. Older comps need real adjustments to reflect current conditions and should be flagged as such in the file."
+  },
+  {
+   "q": "Who actually reviews the comp file during an exchange?",
+   "a": "The qualified intermediary is generally not the one analyzing comps, but a lender's appraiser, a tax advisor reconciling the return, and potentially an examiner reviewing the exchange later may all look at the same file, so it needs to hold up under more than one type of scrutiny."
+  },
+  {
+   "q": "Is a broker's opinion of value good enough for exchange purposes?",
+   "a": "It can be a useful starting point, but it is not a substitute for verified closed sales when the identification math or the tax return depends on the number. Treat a broker opinion as a first pass, not the final figure, for a Phoenix property."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 867
+}

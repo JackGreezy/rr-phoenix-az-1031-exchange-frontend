@@ -1,0 +1,62 @@
+{
+ "slug": "boot-calculation-support",
+ "taxonomy": "services",
+ "title": "Boot Calculation Support",
+ "name": "Boot Calculation Support",
+ "metaTitle": "Boot Calculation Support in Phoenix, AZ",
+ "metaDescription": "How cash boot and debt-reduction boot show up in a Phoenix 1031 exchange, and the numbers investors need to check before picking a replacement.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>Boot is anything an investor receives in an exchange that is not like-kind real property, and it is taxable to the extent it exists. It shows up in two forms: cash boot and debt-reduction boot, and the second one catches more Phoenix investors off guard than the first.</p>"
+  },
+  {
+   "heading": "Two Kinds of Boot That Actually Show Up",
+   "html": "<p>Cash boot is straightforward. If money is left over after the qualified intermediary buys the replacement property and that cash comes back to the investor, it is taxable. The second kind, debt-reduction boot, is less obvious. If the loan paid off on the relinquished property is larger than the loan taken out on the replacement property, that difference is treated as boot, even if the investor never touches a dollar of cash.</p><p>Both kinds show up in the same Phoenix trades over and over: an investor sells a highly leveraged asset and buys something smaller or less leveraged, and the debt gap turns into a tax bill nobody budgeted for.</p><p>A third, less common version shows up when personal property or other non-like-kind items are bundled into a Phoenix sale, such as furniture, fixtures, or equipment sold along with a building. Any value assigned to those items is boot as well, separate from the real estate itself.</p>"
+  },
+  {
+   "heading": "Why Trading Down in Debt Creates a Tax Bill",
+   "html": "<p>This comes up constantly with owners exiting leveraged multifamily in Glendale or Peoria into a smaller, less leveraged asset, or into a DST with lighter debt. An investor who pays off a large loan and replaces it with a much smaller one has reduced their liabilities, and the IRS treats that reduction the same way it treats cash in hand.</p><p>The fix is not complicated in theory: match or exceed the payoff debt on the replacement side, or bring outside cash to the closing to offset the difference. In practice, matching debt levels across a Camelback office trade or a West Valley industrial purchase takes coordination with a lender well before the 45-day identification deadline, since Phoenix lenders need lead time to underwrite a loan sized to a specific target.</p>"
+  },
+  {
+   "heading": "Running the Numbers Before You Pick a Replacement",
+   "html": "<p>Before locking in a replacement property, run the boot math with real numbers, not estimates:</p><ul><li>Relinquished property sale price and payoff amount on the existing loan</li><li>Replacement property purchase price and the new loan amount being underwritten</li><li>Any cash received back from the qualified intermediary at closing</li><li>Closing costs that are or are not treated as exchange expenses</li><li>Net debt relief versus net debt assumed across both sides of the trade</li></ul>"
+  },
+  {
+   "heading": "How Investors Offset Boot Without Breaking the Exchange",
+   "html": "<p>Cash boot can sometimes be absorbed by placing the leftover proceeds into a DST rather than letting them come back to the investor. Debt-reduction boot generally needs either a larger replacement loan or additional cash contributed at closing. Neither fix is automatic, and the right move depends on the specific numbers on both sides of the trade. Confirm the calculation with your qualified intermediary and tax advisor before the replacement purchase closes, especially on larger Phoenix trades where the debt gap can run into six figures.</p>"
+  },
+  {
+   "heading": "A Worked Example of Debt-Reduction Boot",
+   "html": "<p>Say a Phoenix investor sells a Glendale multifamily property for three million dollars with a two-million-dollar loan payoff. The replacement property, a smaller Peoria asset, is purchased for two-point-four million with a one-point-two-million-dollar loan. The debt dropped by eight hundred thousand dollars, and unless the investor brings that amount in outside cash to the replacement closing, it is treated as boot and taxed to the extent of realized gain.</p><p>This is the scenario that trips up owners who assume that trading down in price automatically means trading down cleanly. The debt gap, not the price gap, is what actually creates the tax exposure.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What is the difference between cash boot and debt-reduction boot?",
+   "a": "Cash boot is money actually received by the investor from exchange proceeds. Debt-reduction boot is the taxable difference when the loan paid off on the relinquished property is larger than the loan taken on the replacement property, even with no cash changing hands."
+  },
+  {
+   "q": "Can I offset debt-reduction boot with cash at closing?",
+   "a": "Yes. Bringing outside cash to the replacement closing can offset a lower loan amount and reduce or eliminate the boot created by the debt difference. The exact offset should be confirmed with a tax advisor before the closing date."
+  },
+  {
+   "q": "Does boot always trigger tax on the full amount received?",
+   "a": "Boot is taxed only up to the amount of realized gain on the exchange. An investor with little or no gain may receive some boot without a large tax consequence, but this depends on the specific numbers on the trade."
+  },
+  {
+   "q": "Can leftover cash from an exchange go into a DST instead of coming back to me?",
+   "a": "In many cases yes, which can help avoid cash boot from unused exchange proceeds. Confirm timing and eligibility with your qualified intermediary before the funds would otherwise be returned to you."
+  },
+  {
+   "q": "Do closing costs count as boot?",
+   "a": "Certain exchange-related closing costs can be paid from exchange proceeds without creating boot, while others cannot. Get a specific list from your qualified intermediary before closing so nothing gets miscounted on either side of the trade."
+  },
+  {
+   "q": "What if I want to receive some boot on purpose?",
+   "a": "Some Phoenix investors intentionally take a partial boot to pull out some cash while still deferring most of the gain. This is a valid strategy, but the tax consequence should be calculated in advance with a tax advisor, not discovered after closing."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 887
+}

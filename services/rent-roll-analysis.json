@@ -1,0 +1,70 @@
+{
+ "slug": "rent-roll-analysis",
+ "taxonomy": "services",
+ "title": "Rent Roll Analysis",
+ "name": "Rent Roll Analysis",
+ "metaTitle": "Rent Roll Analysis in Phoenix, AZ",
+ "metaDescription": "Line-by-line rent roll review on Phoenix replacement properties for 1031 exchange investors, catching what a broker summary sheet leaves out.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>A rent roll on paper and a rent roll after we've checked it against actual leases are two different documents. We go line by line before a Phoenix property makes your identification list.</p>"
+  },
+  {
+   "heading": "What a Broker Summary Usually Hides",
+   "html": "<p>A marketing rent roll shows in-place rent and unit mix, full stop. It rarely flags which tenants are on month-to-month status, which units carry a concession that's about to end, or which leases have a below-market renewal option baked in from years ago. Phoenix rents have moved fast in some submarkets, so a lease signed three years ago can sit well under current market without the summary sheet showing why.</p>"
+  },
+  {
+   "heading": "Checking the Roll Against Real Leases",
+   "html": "<p>We pull a sample of the actual lease files alongside the roll and confirm the numbers match. On multifamily this means checking security deposits, pet fees, and utility reimbursements against what's recorded. On retail and net lease this means confirming reimbursement structure and any co-tenancy clauses that could let a tenant reduce rent if an anchor leaves.</p><p>Discrepancies between the roll and the actual leases show up more often than sellers expect, usually from a rent bump that never got updated in the management software or a concession that was verbally extended but never written into an amendment. Either one changes the real income number you should be underwriting to.</p>"
+  },
+  {
+   "heading": "The Line Items We Flag Every Time",
+   "html": "<p>Every rent roll review we run checks the same items regardless of property type:</p><ul><li>Month-to-month tenants versus tenants on a signed term lease</li><li>Concessions or free rent periods still burning off</li><li>Delinquency by unit or suite over the trailing three months</li><li>Below-market renewal options with fixed rent bumps</li><li>Security deposit records against what the roll claims is held</li></ul><p>Any one of those can change what a property is actually worth to you as a replacement.</p>"
+  },
+  {
+   "heading": "Why This Matters Before You Identify, Not After",
+   "html": "<p>Once you're inside the 45-day identification window, you want to be choosing between properties you've already stress-tested, not properties you're still discovering problems with. We run this analysis on candidates before they go on your short list so the identification decision is based on real numbers.</p><p>This is underwriting work, not tax advice. Your qualified intermediary and CPA still need to confirm how the deal fits your exchange structure.</p>"
+  },
+  {
+   "heading": "A Phoenix-Specific Wrinkle",
+   "html": "<p>Because several Phoenix submarkets added a lot of new supply at once, some rent rolls include concessions to fill units against that new competition. We separate trailing rent from what the roll shows as current asking rent, since the gap between the two tells you how much of the in-place income is actually sustainable.</p>"
+  },
+  {
+   "heading": "What This Looks Like on a Real Candidate",
+   "html": "<p>On a recent multifamily rent roll we reviewed for a candidate property in the West Valley, roughly a quarter of the units carried a one- or two-month concession that hadn't been reflected in the headline net rent figure the broker circulated. Once we adjusted for it, the effective income was noticeably lower than the marketing package suggested, which changed how that building compared to the other candidates on the same list.</p><p>That kind of gap doesn't mean a property is a bad replacement, it means the number you're underwriting to needs to be the adjusted one, not the headline one. We hand you both figures so the comparison across candidates is apples to apples.</p>"
+  },
+  {
+   "heading": "How This Feeds Into Your Identification Decision",
+   "html": "<p>A rent roll review isn't a one-time check we run and file away. As candidates move through your identification window, we keep the roll data current, since a unit that was occupied when a property first showed up on your list can turn over before you actually close. We flag any material change in occupancy or delinquency between when a candidate was first vetted and when you're ready to sign the identification notice, so the numbers you're relying on are still accurate.</p>"
+  },
+  {
+   "heading": "What We Hand Off to Your Lender and CPA",
+   "html": "<p>Once a rent roll clears our review, we package the adjusted income figures for your lender's underwriting and for your CPA's review of how the property fits your exchange. Having one consistent set of numbers, rather than the broker's version, your lender's version, and your own estimate, keeps the closing process from stalling on a disagreement about what the property actually earns.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What does a rent roll analysis catch that a broker's marketing summary doesn't?",
+   "a": "Month-to-month tenants, expiring concessions, delinquency patterns, and below-market renewal options are usually missing or buried in a marketing rent roll. We check the underlying lease files for all of it."
+  },
+  {
+   "q": "How far back do you check delinquency history on a rent roll?",
+   "a": "We typically pull the trailing three months at minimum, longer if the property shows any red flags in that window, to see whether collection issues are a pattern or a one-time event."
+  },
+  {
+   "q": "Why does new supply in a Phoenix submarket affect rent roll accuracy?",
+   "a": "Owners sometimes offer concessions to compete with new buildings nearby, which can make in-place rent look higher than what a unit will actually renew at. We separate trailing rent from asking rent to show the real picture."
+  },
+  {
+   "q": "Does rent roll analysis affect whether a property counts as like-kind for my exchange?",
+   "a": "No, like-kind status is a property classification question for your qualified intermediary and tax advisor. Rent roll analysis is about whether the deal's income holds up, separate from exchange qualification."
+  },
+  {
+   "q": "Should I still get my own inspection if you've reviewed the rent roll?",
+   "a": "Yes. Rent roll analysis covers income and lease terms, not physical condition. You still need your own inspection and any specialist reports before closing."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 886
+}

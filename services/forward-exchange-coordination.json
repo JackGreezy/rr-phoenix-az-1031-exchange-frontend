@@ -1,0 +1,62 @@
+{
+ "slug": "forward-exchange-coordination",
+ "taxonomy": "services",
+ "title": "Forward Exchange Coordination",
+ "name": "Forward Exchange Coordination",
+ "metaTitle": "Forward Exchange Coordination in Phoenix, AZ",
+ "metaDescription": "How a standard forward 1031 exchange is sequenced for Phoenix investors selling first and buying second, and where the timing risk sits.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>A forward exchange is the standard order almost every 1031 exchange follows: the relinquished property sells first, and the replacement property is purchased afterward, inside the 180-day window that starts the day the first sale closes. Most Phoenix investors run this structure without ever needing anything more complex.</p>"
+  },
+  {
+   "heading": "The Order Almost Every Exchange Follows",
+   "html": "<p>Compared to a reverse exchange, where the replacement property is bought first through an accommodator, a forward exchange is the simpler structure and the one qualified intermediaries handle most often. The investor lists and sells the relinquished property, proceeds go straight to the qualified intermediary at closing, and the 45-day and 180-day clocks both start that same day.</p><p>Because the sequence is familiar to nearly every title company and lender in the Phoenix market, a forward exchange usually moves through closing with fewer surprises than the alternative structures.</p><p>That familiarity matters more than it sounds. Escrow officers and lenders across the Phoenix metro who handle exchange closings regularly know what documents to expect and when, which cuts down on the back-and-forth that can eat into a tight identification window.</p>"
+  },
+  {
+   "heading": "Timing the Sale Before You've Locked a Buy",
+   "html": "<p>The risk in a forward exchange is not the paperwork, it is the sequencing. An owner selling an aging retail strip near Camelback might get a strong offer before they have any real replacement lined up. Once that relinquished sale closes, the clock starts whether or not a replacement candidate is ready, which is why the identification homework should start the moment the relinquished property goes under contract, not after it closes.</p><p>Investors selling into a hot Phoenix submarket often underestimate how fast an offer can come together, and end up starting the replacement search later than they should.</p><p>A useful habit is to treat the listing date, not the closing date, as the real start of the exchange planning process. By the time a Phoenix seller has an accepted offer, there should already be a short list of replacement candidates being tracked, even informally, so the 45-day window opens with real options rather than a blank page.</p>"
+  },
+  {
+   "heading": "Keeping the QI in the Loop From Day One",
+   "html": "<p>The qualified intermediary needs to be brought in before the relinquished property closes, not after. The exchange agreement has to be signed and the assignment of the sale contract has to be in place prior to closing, or the funds cannot be held correctly and the exchange treatment can be lost entirely.</p><p>Investors sometimes wait until an offer is accepted to think about the exchange structure at all, which leaves very little runway with a Phoenix closing that can move in three or four weeks. Engaging the qualified intermediary as soon as the property is listed, not once it is under contract, removes that risk.</p>"
+  },
+  {
+   "heading": "What a Clean Forward Exchange Sequence Looks Like",
+   "html": "<p>A forward exchange generally follows this order:</p><ul><li>List and go under contract on the relinquished property</li><li>Sign the exchange agreement with the qualified intermediary before closing</li><li>Close the relinquished sale, with proceeds wired directly to the qualified intermediary</li><li>Deliver the written identification notice within 45 days of that closing</li><li>Close on the replacement property within 180 days of the same closing date</li></ul>"
+  },
+  {
+   "heading": "Comparing Timelines: Forward vs Reverse in Practice",
+   "html": "<p>A forward exchange on a Phoenix property typically moves through underwriting and title work the same way any standard purchase would, just with the qualified intermediary's paperwork layered on top. A reverse exchange adds an accommodation titleholder, additional loan structuring, and often a higher cost, which is why most Phoenix investors default to the forward structure whenever the sale-then-buy sequence is realistic.</p><p>The decision to use a reverse structure instead usually comes down to one fact: a strong replacement property becomes available before the relinquished property has a buyer lined up, and waiting risks losing it.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "How is a forward exchange different from a reverse exchange?",
+   "a": "In a forward exchange, the relinquished property is sold first and the replacement is purchased afterward. In a reverse exchange, the replacement is acquired first, typically through an accommodator, before the relinquished property sells."
+  },
+  {
+   "q": "When does the qualified intermediary need to be involved?",
+   "a": "Before the relinquished property closes. The exchange agreement and assignment of the sale contract need to be in place at or before that closing, not arranged afterward."
+  },
+  {
+   "q": "What if I sell my relinquished property before I have found a replacement?",
+   "a": "This is common and workable, but it puts real pressure on the 45-day identification window. Start reviewing replacement candidates as soon as the relinquished property is under contract, not after it closes."
+  },
+  {
+   "q": "Can I receive any of the sale proceeds directly during a forward exchange?",
+   "a": "No. Proceeds need to go directly from closing to the qualified intermediary. Taking receipt of funds, even briefly, can be treated as constructive receipt and disqualify the exchange."
+  },
+  {
+   "q": "Does a forward exchange cost more or take longer than a reverse exchange?",
+   "a": "Generally a forward exchange is simpler and less expensive than a reverse exchange, since it does not require an accommodator to hold title to a Phoenix property temporarily."
+  },
+  {
+   "q": "What if my relinquished property sells faster than expected?",
+   "a": "A fast sale is a good outcome overall, but it compresses the timeline for finding a replacement. Start identifying candidates as soon as the property is listed rather than waiting for an accepted offer, so a quick Phoenix sale does not catch the exchange planning off guard."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 861
+}

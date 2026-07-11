@@ -1,0 +1,66 @@
+{
+ "slug": "exchange-documentation-assembly",
+ "taxonomy": "services",
+ "title": "Exchange Documentation Assembly",
+ "name": "Exchange Documentation Assembly",
+ "metaTitle": "Exchange Documentation Assembly in Phoenix, AZ",
+ "metaDescription": "The paperwork chain behind a Phoenix 1031 exchange, from the exchange agreement through closing statements, and who signs what along the way.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>A 1031 exchange runs on paper as much as it runs on deadlines. Missing or mismatched documents can unravel an otherwise clean Phoenix trade, so the file needs to be assembled correctly from the first contract, not patched together after the fact.</p>"
+  },
+  {
+   "heading": "The Paper Trail Behind Every Exchange",
+   "html": "<p>The core documents start with the exchange agreement between the investor and the qualified intermediary, which spells out how proceeds are held and who has rights to what. From there, the relinquished property contract needs a written assignment to the qualified intermediary, along with a notice of that assignment delivered to the buyer. The replacement property side needs the mirror image: an assignment to the qualified intermediary and notice to the seller.</p><p>None of this paperwork is optional, and skipping a step because a Phoenix deal is moving fast is how an otherwise valid exchange gets challenged later.</p><p>Every document in the chain exists to prove one thing: that the investor never had control of the sale proceeds. Weak or missing assignment paperwork is exactly what an examiner would look at first if the exchange were ever questioned on that point.</p>"
+  },
+  {
+   "heading": "Who Signs What and When",
+   "html": "<p>On a Camelback office trade or a West Valley industrial purchase, the investor signs the underlying purchase and sale contracts directly, but the assignments and notices route through the qualified intermediary's paperwork. Title and escrow need copies of the assignment documents before they can close correctly under the exchange structure, not after the fact.</p><p>The identification notice itself is a separate document from the assignments, and it needs to be signed and delivered to the qualified intermediary before the 45-day deadline regardless of where the closing paperwork stands on either side of a Phoenix transaction.</p><p>On deals involving an entity rather than an individual investor, the signing authority also needs to be confirmed early. A Phoenix LLC or partnership signing the exchange agreement needs its operating agreement and any required member consents lined up before closing, not discovered as a last-minute question from title.</p>"
+  },
+  {
+   "heading": "Keeping the File Straight Across Two Closings",
+   "html": "<p>Assembling a clean exchange file means tracking the following across both sides of the trade:</p><ul><li>Exchange agreement with the qualified intermediary</li><li>Assignment of the relinquished property contract and notice to the buyer</li><li>Assignment of the replacement property contract and notice to the seller</li><li>Written identification notice with legal descriptions or addresses</li><li>Settlement statements from both closings</li><li>Wire confirmations showing funds moved through the qualified intermediary, not the investor</li></ul>"
+  },
+  {
+   "heading": "What Title and Escrow Need From You Early",
+   "html": "<p>Title companies handling either side of a Phoenix exchange closing need the assignment documents in hand before they can prepare settlement statements that reflect the exchange structure correctly. Waiting until days before closing to hand over the paperwork is the single most common reason a closing date slips.</p><p>Confirm the document checklist with your qualified intermediary as soon as either contract is signed, and share it with title early rather than assuming they will ask for what they need.</p>"
+  },
+  {
+   "heading": "Building a Closing Binder That Holds Up Later",
+   "html": "<p>A well-assembled Phoenix exchange file stays useful well beyond closing; it is what a tax advisor pulls from months later when Form 8824 gets prepared, and what an investor wants in hand if the exchange is ever questioned. Keeping paper copies or a single organized digital folder, rather than scattered email attachments across two closings, saves real time when that file gets requested again.</p><p>Every party involved, from the qualified intermediary to title to the lender, should be working from the same version of the document checklist, not separate assumptions about what the others already have.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "What is the first document I need in a 1031 exchange?",
+   "a": "The exchange agreement with the qualified intermediary, signed before the relinquished property closes. This document establishes how proceeds are held and prevents the investor from taking constructive receipt of the funds."
+  },
+  {
+   "q": "Do I need a separate assignment for the relinquished and replacement contracts?",
+   "a": "Yes. Each side of the trade requires its own assignment of the purchase contract to the qualified intermediary, along with written notice to the other party in that transaction."
+  },
+  {
+   "q": "Who keeps the original identification notice?",
+   "a": "The qualified intermediary should have the signed original or a copy on file, since it is the document that proves the 45-day deadline was met with the required specificity."
+  },
+  {
+   "q": "Can title and escrow close without seeing the exchange documents?",
+   "a": "They can close a sale, but not one structured correctly as part of a 1031 exchange. Missing assignment paperwork can force a correction after the fact or jeopardize the exchange entirely."
+  },
+  {
+   "q": "What should I keep for my own records after closing?",
+   "a": "Copies of every document listed above, plus both settlement statements, wire confirmations, and the final closing disclosures. Your tax advisor will need this file to prepare Form 8824 for your Phoenix transaction."
+  },
+  {
+   "q": "How long should I keep exchange documentation after closing?",
+   "a": "Most tax advisors recommend keeping the full exchange file for as long as the replacement property is held, plus several years after any eventual sale, since the carryover basis established in this exchange affects every later calculation."
+  },
+  {
+   "q": "What if the qualified intermediary and title company use different document formats?",
+   "a": "Confirm early which documents each party requires and in what form, since a Phoenix closing involving multiple parties with different paperwork habits can create last-minute confusion if nobody reconciles the formats ahead of the closing date."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 865
+}

@@ -1,0 +1,62 @@
+{
+ "slug": "200-percent-rule-strategy",
+ "taxonomy": "services",
+ "title": "200% Rule Strategy",
+ "name": "200% Rule Strategy",
+ "metaTitle": "200% Rule Strategy in Phoenix, AZ",
+ "metaDescription": "How the 200% identification rule lets Phoenix exchange investors list more than three replacement properties, and how the value math actually works.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>The 200% rule lets an investor identify more than three replacement properties on the 45-day list, as long as the combined fair market value of everything on that list does not exceed twice the sale price of the relinquished property. It is a value cap, not a headcount rule, and Phoenix investors spreading a trade across multiple asset types run into it often.</p>"
+  },
+  {
+   "heading": "What the 200% Cap Actually Limits",
+   "html": "<p>Say a Phoenix investor sells a Camelback-area office building for four million dollars. Under the 200% rule, the combined fair market value of every property on the identification list has to stay at or under eight million dollars, no matter how many addresses are on the page. Go one dollar over that cap and the whole list can be treated as if it were never identified.</p><p>This matters because the cap is measured on the day the properties are identified, not on the closing date months later. A candidate that looked fairly priced on day 10 can push the list over the cap if it gets bid up before day 45, which happens regularly in a Phoenix market where multiple buyers are chasing the same handful of buildings.</p>"
+  },
+  {
+   "heading": "When Phoenix Investors Need More Than Three Names",
+   "html": "<p>Investors spreading risk across a Camelback office asset, a West Valley industrial building, and a Tempe multifamily deal all at once often need more than three candidates to make sure at least one closes inside 180 days. The 200% rule is what makes that kind of spread possible without losing the exchange over a headcount technicality.</p><p>It also comes up when a Phoenix investor is not sure which submarket will actually produce a closable deal first, and wants backups across industrial, office, and multifamily rather than three names in a single asset class.</p><p>A fourth or fifth candidate is also useful insurance against a Phoenix seller who gets cold feet or a lender who declines a deal late in underwriting. Rather than starting the search over from zero if one name drops, an investor working with a longer list under the 200% rule can simply move to the next candidate without losing time against the 180-day deadline.</p>"
+  },
+  {
+   "heading": "Running the Math Before You Sign the List",
+   "html": "<p>Before signing the identification notice, run the numbers on every candidate, not merely the front-runner:</p><ul><li>Confirm the exact sale price of the relinquished property that sets the 200% ceiling</li><li>Get a current fair market value estimate on each candidate property</li><li>Add the estimates together and compare against the cap before the notice is signed</li><li>Rank the candidates so the strongest deal is not the one you might have to drop</li><li>Recheck the math if any candidate's asking price moves before day 45</li></ul>"
+  },
+  {
+   "heading": "Where This Rule Breaks Down in Practice",
+   "html": "<p>Investors get into trouble when they treat the 200% cap as a soft guideline instead of a hard number. A West Valley industrial building that gets bid up ten percent in a multiple-offer situation can push a four-property Phoenix list over the line without anyone noticing until it is too late. Confirm the running total with your qualified intermediary before the notice goes out, and check the final math with your tax advisor before day 45 arrives.</p>"
+  },
+  {
+   "heading": "A Worked Example From a Multi-Asset Trade",
+   "html": "<p>Take a Phoenix investor who sells a mid-size office building for five million dollars. The 200% cap sits at ten million. A list built from a seven-million-dollar West Valley industrial building, a two-million-dollar Tempe multifamily property, and a nine-hundred-thousand-dollar retail pad in Chandler adds up to just under ten million, leaving almost no room for a fourth candidate without recutting the numbers.</p><p>If the industrial building's price moves up by even three hundred thousand dollars before day 45, the whole list has to be rechecked, and something may need to come off before the notice goes out.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "How is the 200% cap actually calculated?",
+   "a": "It is twice the fair market value of the relinquished property, measured against the combined fair market value of every property on the identification list on the day it is signed. Any Phoenix investor identifying four or more properties needs this math run before signing."
+  },
+  {
+   "q": "Does the 200% rule replace the three-property rule?",
+   "a": "No, they are separate counting methods. An investor picks whichever rule fits the list being identified; going over three properties without meeting the 200% cap can invalidate the whole identification."
+  },
+  {
+   "q": "What happens if my list goes over the 200% cap?",
+   "a": "The identification can be treated as if the properties over the limit were never listed, which can leave an investor short on viable replacements. Recheck the math with your qualified intermediary before signing the notice."
+  },
+  {
+   "q": "Do I need appraisals to support the fair market value numbers?",
+   "a": "A formal appraisal is not always required at the identification stage, but investors should have a defensible value estimate for every candidate, since the qualified intermediary and later the tax advisor will both need to support the number."
+  },
+  {
+   "q": "Can I use the 200% rule for a mix of property types?",
+   "a": "Yes. The rule looks at combined value, not asset class, so a Phoenix investor's list can mix office, industrial, and multifamily candidates as long as the total stays under the cap."
+  },
+  {
+   "q": "Should I identify exactly at the 200% cap or leave room under it?",
+   "a": "Leaving some room under the cap is generally safer, since Phoenix property values can move between the day a list is drafted and the day it is signed. Cutting it too close invites a last-minute recalculation that can force a candidate off the list."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 888
+}

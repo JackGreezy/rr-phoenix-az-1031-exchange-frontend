@@ -1,0 +1,66 @@
+{
+ "slug": "95-percent-rule-strategy",
+ "taxonomy": "services",
+ "title": "95% Rule Strategy",
+ "name": "95% Rule Strategy",
+ "metaTitle": "95% Rule Strategy in Phoenix, AZ",
+ "metaDescription": "How the 95% identification rule works for Phoenix exchange investors who need to list more properties than the value cap allows, and where it fits.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>The 95% rule lets an investor identify an unlimited number of replacement properties, with no value cap at all, as long as at least 95% of the combined fair market value identified actually gets acquired by day 180. Phoenix investors working a long list of smaller parcels lean on this rule more than any other in the network.</p>"
+  },
+  {
+   "heading": "The Tradeoff Behind Unlimited Names",
+   "html": "<p>Most exchanges never touch this rule because the three-property and 200% rules cover the usual cases. It comes up when a Phoenix investor is working a long list of smaller parcels rather than one or two large buildings, and the value math under the 200% rule would not leave enough room to identify everything worth chasing.</p><p>The rule exists precisely for this situation, but it shifts the risk from a value cap to a closing-rate requirement, and that tradeoff is not automatically the right call for every Phoenix investor's situation.</p>"
+  },
+  {
+   "heading": "Why Land Investors Along the Loop 303 Corridor Lean on It",
+   "html": "<p>Raw land and entitlement deals along the growth corridor west of Phoenix, out toward Buckeye and the edge of Casa Grande, tend to trade in smaller parcels rather than single large tracts. An investor chasing several parcels at once, with no certainty which ones will actually close, can list a dozen candidates under the 95% rule without worrying about a value ceiling.</p><p>The catch is real: almost all of that identified value has to close. Listing ten parcels and closing on three of them, even if those three represent good deals for a Phoenix-area exchange, will not satisfy a 95% test if the combined value of the other seven was substantial.</p>"
+  },
+  {
+   "heading": "The Math That Makes or Breaks the Rule",
+   "html": "<p>Before relying on this rule, walk through the acquisition math with your qualified intermediary:</p><ul><li>Add up the fair market value of every parcel on the identification list</li><li>Calculate what 95% of that total actually equals in dollars</li><li>Confirm which parcels are realistic to close inside 180 days, not merely under contract</li><li>Rank parcels by closing certainty, not merely by deal quality</li><li>Recheck the running total any time a parcel drops out of contention</li></ul>"
+  },
+  {
+   "heading": "Where This Rule Gets Investors Into Trouble",
+   "html": "<p>The rule fails quietly. A Phoenix investor can close on most of the parcels by count and still miss the 95% value test if the properties that fell through happened to be the larger ones on the list. Confirm the acquisition math with your qualified intermediary as parcels close, not merely at the end of the 180-day period, and loop in your tax advisor before relying on this rule for a land-heavy exchange around the metro's growth edges.</p>"
+  },
+  {
+   "heading": "A Worked Example From a Land Assemblage",
+   "html": "<p>Say a Phoenix-area investor identifies nine parcels along the growth corridor toward Buckeye, with a combined fair market value of eighteen million dollars. Ninety-five percent of that total is just over seventeen million. If the two largest parcels, worth a combined six million, fall out of contract, the investor needs the remaining seven parcels to close for roughly eleven million more to hit the threshold, which may not be realistic depending on how those deals are moving.</p><p>Running this math early, rather than assuming volume alone will carry the day, is what keeps a land-heavy Phoenix exchange from failing on a technicality after most of the work is already done.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Why would an investor use the 95% rule instead of the 200% rule?",
+   "a": "The 95% rule has no cap on the number of properties or their combined value, which helps investors identifying many smaller parcels where the 200% value ceiling would otherwise force them to drop candidates."
+  },
+  {
+   "q": "What counts toward the 95% threshold?",
+   "a": "The fair market value of every property actually acquired by the end of the 180-day exchange period, measured against the combined fair market value of everything on the original identification list."
+  },
+  {
+   "q": "Can I drop a parcel from my list if it falls out of contract?",
+   "a": "Once the 45-day identification deadline has passed, the list is generally locked. Dropped parcels still count against the original identified value when the 95% math is run, which is why the initial list matters so much."
+  },
+  {
+   "q": "Is the 95% rule risky compared to the other identification rules?",
+   "a": "It carries more risk because almost the entire identified value has to close, not merely a majority of the properties by count. Work through the acquisition math with your qualified intermediary before choosing this rule for a Phoenix-area land trade."
+  },
+  {
+   "q": "Does this rule apply to any property type or just land?",
+   "a": "It applies to any property type. Land and entitlement deals along growth corridors outside Phoenix use it often simply because those deals tend to involve more, smaller parcels than a single building purchase."
+  },
+  {
+   "q": "How should I rank parcels once I know I need the 95% rule?",
+   "a": "Rank by closing certainty first, deal quality second. A Phoenix investor should push the parcels most likely to actually reach closing to the top of the list, since those are the ones the 95% math depends on."
+  },
+  {
+   "q": "Can I combine the 95% rule with a DST placement for leftover value?",
+   "a": "In some cases, yes. If a Phoenix land assemblage falls short of closing on enough parcels to hit the 95% threshold, a DST placement can sometimes absorb remaining exchange proceeds, though this needs to be structured carefully with the qualified intermediary well before the deadline."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 857
+}

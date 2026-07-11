@@ -1,0 +1,74 @@
+{
+ "slug": "t12-financial-review",
+ "taxonomy": "services",
+ "title": "T12 Financial Review",
+ "name": "T12 Financial Review",
+ "metaTitle": "T12 Financial Review in Phoenix, AZ",
+ "metaDescription": "Trailing twelve month financial review on Phoenix replacement properties for 1031 exchange investors, normalizing insurance, tax, and utility swings.",
+ "sections": [
+  {
+   "heading": null,
+   "html": "<p>A trailing twelve month statement tells you what a property actually did, not what a broker's pro forma hopes it will do. We normalize that statement before any Phoenix property goes on your identification list.</p>"
+  },
+  {
+   "heading": "Why Trailing Numbers Beat a Pro Forma Here",
+   "html": "<p>A pro forma projects forward, often with expense assumptions that don't hold up in Phoenix's actual cost environment. The trailing twelve months shows real insurance premiums, real utility bills, and real repair costs, which matters more here than in a lot of markets given how much summer cooling load and property insurance costs have shifted lately.</p>"
+  },
+  {
+   "heading": "The Line Items That Move Most in This Market",
+   "html": "<p>Insurance is usually the first number we recheck, since Arizona premiums have climbed and a trailing twelve months from two years ago can understate current cost significantly. Utility expense on multifamily and retail properties also swings with how much of the cooling load the owner covers versus passes through to tenants, so we confirm which side of that line the seller's numbers reflect.</p>"
+  },
+  {
+   "heading": "How We Normalize a T12 Before You See It",
+   "html": "<p>The review runs through the same steps on every property:</p><ul><li>Re-quote insurance at current market rates rather than the seller's in-place premium</li><li>Confirm property tax assessment isn't about to reset on a sale</li><li>Separate one-time repair costs from recurring maintenance</li><li>Check utility line items against who actually pays them, owner or tenant</li><li>Flag any expense categories missing entirely from the seller's statement</li></ul><p>That last one shows up more than people expect. A statement missing a line for landscaping or pest control isn't a property with no expense there, it's a property with an incomplete statement.</p>"
+  },
+  {
+   "heading": "Fitting This Into Your Identification Timeline",
+   "html": "<p>We run this review before a property reaches your candidate list, so by the time you're inside the forty-five-day identification window, the financial picture is already normalized rather than something you're untangling under deadline pressure.</p><p>This is underwriting, not tax advice. Your CPA and qualified intermediary still confirm how the numbers fit your exchange and whether price or debt on the replacement creates boot.</p>"
+  },
+  {
+   "heading": "What a Clean T12 Doesn't Tell You",
+   "html": "<p>Financials show income and expense history, not physical condition or lease strength. We pair every T12 review with the rent roll and, where it applies, a physical condition check, since a clean financial statement can still sit under a roof that needs replacing next year.</p>"
+  },
+  {
+   "heading": "How a Property Tax Reset Can Distort the Numbers",
+   "html": "<p>Maricopa County reassesses property values on a regular cycle, and a sale itself can trigger a reassessment that raises the tax line well above what the seller's T12 shows. We check the current assessed value against the pending sale price and estimate what the tax line looks like after a reset, since that's a cost you'll carry from day one of ownership, not something that phases in gradually.</p><p>This shows up most on older properties that haven't traded hands in a long time, where the assessed value has fallen well behind current market value and a sale closes that gap immediately.</p>"
+  },
+  {
+   "heading": "A Real Example of Why Normalizing Matters",
+   "html": "<p>On a recent West Valley multifamily candidate, the seller's T12 showed a strong net operating income figure built on an insurance premium locked in three years earlier. Re-quoting insurance at current rates and adjusting the property tax line for a post-sale reset cut that net operating income figure meaningfully. The property still worked as a replacement, but only at a different price than the headline number suggested, which is exactly the kind of gap we want caught before you identify it, not after you own it.</p>"
+  },
+  {
+   "heading": "Repair and Maintenance Line Items Worth a Closer Look",
+   "html": "<p>A T12 that shows unusually low repair and maintenance spending isn't always good news. Sometimes it means an owner deferred work that a new buyer will need to fund in the first year, particularly on roofing and HVAC systems given how hard Phoenix summers run cooling equipment. We ask for the maintenance invoices behind the T12 line item, beyond the total figure alone, so a thin repair budget doesn't get mistaken for a well-maintained building.</p>"
+  },
+  {
+   "heading": "How Long This Review Takes",
+   "html": "<p>A full T12 normalization typically takes us a few business days once the seller's statement is in hand, longer if insurance re-quotes or tax assessment estimates need follow-up calls. We build that time into your candidate screening process so it's finished well before a property reaches your identification list, not squeezed into the final days of the window.</p>"
+  }
+ ],
+ "faqs": [
+  {
+   "q": "Why do you re-quote insurance instead of using the seller's stated premium?",
+   "a": "Arizona insurance costs have moved up, and a seller's in-place premium from a year or two ago can understate what you'll actually pay going forward. We get a current quote before the property goes on your list."
+  },
+  {
+   "q": "What's the difference between a T12 and a pro forma?",
+   "a": "A T12 shows actual trailing twelve month performance; a pro forma is a projection, often with optimistic assumptions. We rely on the T12 and normalize it rather than trusting a broker's forward-looking numbers."
+  },
+  {
+   "q": "How do utility expenses affect T12 review on Phoenix multifamily?",
+   "a": "It depends on whether the owner or the tenant covers cooling costs. We confirm which side of that line the seller's statement reflects before accepting the expense figure as accurate."
+  },
+  {
+   "q": "Can a missing expense line item on a T12 be a red flag?",
+   "a": "Yes. A category like landscaping or pest control missing from the statement usually means the statement is incomplete, not that the property has no cost there. We flag those gaps before you rely on the numbers."
+  },
+  {
+   "q": "Does a clean T12 mean the property is in good physical condition?",
+   "a": "No. Financial performance and physical condition are separate questions. We pair T12 review with rent roll and condition checks so you're not relying on financials alone."
+  }
+ ],
+ "internalLinks": [],
+ "wordCount": 897
+}
