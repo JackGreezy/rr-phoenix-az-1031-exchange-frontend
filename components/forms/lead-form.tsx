@@ -69,7 +69,7 @@ export function LeadForm() {
   const [turnstileId, setTurnstileId] = useState<string | null>(null);
   const [turnstileReady, setTurnstileReady] = useState(false);
 
-  const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY;
+  const siteKey = "";
 
   useEffect(() => {
     let cancelled = false;
@@ -242,9 +242,7 @@ export function LeadForm() {
   return (
     <form
       id="lead-form"
-      onSubmit={handleSubmit}
-      className="border border-gray-200 bg-white p-8 shadow-editorial md:p-10"
-    >
+      className="border border-gray-200 bg-white p-8 shadow-editorial md:p-10" action="/api/contact" method="post">
       <h2 className="mb-2 font-serif text-3xl text-mansion-charcoal">
         Start Your Exchange Plan
       </h2>
@@ -263,8 +261,7 @@ export function LeadForm() {
               onChange={handleChange("name")}
               aria-describedby={errors.name ? "name-error" : "name-helper"}
               aria-invalid={!!errors.name}
-              className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold"
-            />
+              className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold" name="name"/>
             {errors.name ? (
               <p id="name-error" className="mt-1 text-sm text-mansion-gold">
                 {errors.name}
@@ -287,8 +284,7 @@ export function LeadForm() {
               onChange={handleChange("email")}
               aria-describedby={errors.email ? "email-error" : "email-helper"}
               aria-invalid={!!errors.email}
-              className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold"
-            />
+              className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold" name="email"/>
             {errors.email ? (
               <p id="email-error" className="mt-1 text-sm text-mansion-gold">
                 {errors.email}
@@ -313,8 +309,7 @@ export function LeadForm() {
               onChange={handleChange("phone")}
               aria-describedby={errors.phone ? "phone-error" : "phone-helper"}
               aria-invalid={!!errors.phone}
-              className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold"
-            />
+              className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold" name="phone"/>
             {errors.phone ? (
               <p id="phone-error" className="mt-1 text-sm text-mansion-gold">
                 {errors.phone}
@@ -327,18 +322,10 @@ export function LeadForm() {
           </div>
           <div>
             <label htmlFor="city" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-mansion-charcoal/70">
-              City <span className="text-mansion-gold">*</span>
+              Have You Done a 1031 Exchange Before? <span className="text-mansion-gold">*</span>
             </label>
-            <input
-              id="city"
-              type="text"
-              required
-              value={formData.city}
-              onChange={handleChange("city")}
-              aria-describedby={errors.city ? "city-error" : "city-helper"}
-              aria-invalid={!!errors.city}
-              className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold"
-            />
+            <select id="city"
+              className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold" name="hasCompleted1031" required><option value="">Select yes or no</option><option value="Yes">Yes</option><option value="No">No</option></select>
             {errors.city ? (
               <p id="city-error" className="mt-1 text-sm text-mansion-gold">
                 {errors.city}
@@ -351,69 +338,15 @@ export function LeadForm() {
           </div>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
-          <div>
-            <label htmlFor="property" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-mansion-charcoal/70">
-              Property Being Sold <span className="text-mansion-gold">*</span>
-            </label>
-            <input
-              id="property"
-              type="text"
-              required
-              value={formData.property}
-              onChange={handleChange("property")}
-              aria-describedby={errors.property ? "property-error" : "property-helper"}
-              aria-invalid={!!errors.property}
-              className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold"
-            />
-            {errors.property ? (
-              <p id="property-error" className="mt-1 text-sm text-mansion-gold">
-                {errors.property}
-              </p>
-            ) : (
-              <p id="property-helper" className="mt-1 text-xs text-mansion-charcoal/50">
-                Include property type, location, and estimated value
-              </p>
-            )}
-          </div>
-          <div>
-            <label htmlFor="estimatedCloseDate" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-mansion-charcoal/70">
-              Estimated Close Date <span className="text-mansion-gold">*</span>
-            </label>
-            <input
-              id="estimatedCloseDate"
-              type="date"
-              required
-              value={formData.estimatedCloseDate}
-              onChange={handleChange("estimatedCloseDate")}
-              aria-describedby={errors.estimatedCloseDate ? "date-error" : "date-helper"}
-              aria-invalid={!!errors.estimatedCloseDate}
-              className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold"
-            />
-            {errors.estimatedCloseDate ? (
-              <p id="date-error" className="mt-1 text-sm text-mansion-gold">
-                {errors.estimatedCloseDate}
-              </p>
-            ) : (
-              <p id="date-helper" className="mt-1 text-xs text-mansion-charcoal/50">
-                Determines your 45 day and 180 day milestones
-              </p>
-            )}
-          </div>
+
+
         </div>
         <div>
           <label htmlFor="message" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-mansion-charcoal/70">
-            Message <span className="text-mansion-gold">*</span>
+            Additional Context <span className="text-mansion-gold">*</span>
           </label>
-          <textarea
-            id="message"
-            rows={4}
-            required
-            value={formData.message}
-            onChange={handleChange("message")}
-            aria-describedby={errors.message ? "message-error" : "message-helper"}
-            aria-invalid={!!errors.message}
-            className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold"
-          />
+          <textarea id="message"
+            className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold" name="notes" rows={4} placeholder="Share any exchange questions or context"></textarea>
           {errors.message ? (
             <p id="message-error" className="mt-1 text-sm text-mansion-gold">
               {errors.message}
@@ -424,14 +357,9 @@ export function LeadForm() {
             </p>
           )}
         </div>
-        {siteKey && (
-          <div className="flex justify-center">
-            <div ref={captchaRef} className="min-h-[78px]" />
-          </div>
-        )}
+
         <button
           type="submit"
-          disabled={status === "submitting" || !!(siteKey && !turnstileReady)}
           className="w-full bg-mansion-gold px-8 py-4 text-base font-semibold text-white transition hover:bg-mansion-gold-dark focus:outline-none focus:ring-2 focus:ring-mansion-gold focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
         >
           {status === "submitting" ? "Submitting..." : "Submit Consultation Request"}
