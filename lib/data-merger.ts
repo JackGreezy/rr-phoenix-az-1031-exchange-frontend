@@ -1,6 +1,7 @@
 import { servicesBatch01 } from "@/data/batches/services/batch-01";
 import { servicesBatch02 } from "@/data/batches/services/batch-02";
 import { servicesBatch03 } from "@/data/batches/services/batch-03";
+import { servicesBatch04 } from "@/data/batches/services/batch-04";
 import { locationsBatch01 } from "@/data/batches/locations/batch-01";
 import { locationsBatch02 } from "@/data/batches/locations/batch-02";
 import { locationsBatch03 } from "@/data/batches/locations/batch-03";
@@ -13,6 +14,7 @@ const allServiceBatches = {
   ...servicesBatch01,
   ...servicesBatch02,
   ...servicesBatch03,
+  ...servicesBatch04,
 };
 
 const allLocationBatches = {
