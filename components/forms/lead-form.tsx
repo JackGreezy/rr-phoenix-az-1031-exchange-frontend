@@ -299,7 +299,7 @@ export function LeadForm() {
         <div className="grid gap-6 md:grid-cols-2">
           <div>
             <label htmlFor="phone" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-mansion-charcoal/70">
-              Phone <span className="text-mansion-gold">*</span>
+              Phone Number <span className="text-mansion-gold">*</span>
             </label>
             <input
               id="phone"
@@ -322,7 +322,7 @@ export function LeadForm() {
           </div>
           <div>
             <label htmlFor="city" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-mansion-charcoal/70">
-              Have You Done a 1031 Exchange Before? <span className="text-mansion-gold">*</span>
+              Have you completed a 1031 exchange before? <span className="text-mansion-gold">*</span>
             </label>
             <select id="city"
               className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold" name="hasCompleted1031" required><option value="">Select yes or no</option><option value="Yes">Yes</option><option value="No">No</option></select>
@@ -343,7 +343,7 @@ export function LeadForm() {
         </div>
         <div>
           <label htmlFor="message" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-mansion-charcoal/70">
-            Additional Context <span className="text-mansion-gold">*</span>
+            Notes <span className="text-mansion-gold">*</span>
           </label>
           <textarea id="message"
             className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold" name="notes" rows={4} placeholder="Share any exchange questions or context"></textarea>
