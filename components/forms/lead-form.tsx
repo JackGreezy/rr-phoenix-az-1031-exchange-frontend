@@ -273,31 +273,6 @@ export function LeadForm() {
             )}
           </div>
           <div>
-            <label htmlFor="email" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-mansion-charcoal/70">
-              Email <span className="text-mansion-gold">*</span>
-            </label>
-            <input
-              id="email"
-              type="email"
-              required
-              value={formData.email}
-              onChange={handleChange("email")}
-              aria-describedby={errors.email ? "email-error" : "email-helper"}
-              aria-invalid={!!errors.email}
-              className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold" name="email"/>
-            {errors.email ? (
-              <p id="email-error" className="mt-1 text-sm text-mansion-gold">
-                {errors.email}
-              </p>
-            ) : (
-              <p id="email-helper" className="mt-1 text-xs text-mansion-charcoal/50">
-                We send a confirmation and documentation checklist
-              </p>
-            )}
-          </div>
-        </div>
-        <div className="grid gap-6 md:grid-cols-2">
-          <div>
             <label htmlFor="phone" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-mansion-charcoal/70">
               Phone Number <span className="text-mansion-gold">*</span>
             </label>
@@ -317,6 +292,31 @@ export function LeadForm() {
             ) : (
               <p id="phone-helper" className="mt-1 text-xs text-mansion-charcoal/50">
                 We confirm timelines by phone within one business day
+              </p>
+            )}
+          </div>
+        </div>
+        <div className="grid gap-6 md:grid-cols-2">
+          <div>
+            <label htmlFor="email" className="mb-2 block text-xs font-semibold uppercase tracking-wider text-mansion-charcoal/70">
+              Email <span className="text-mansion-gold">*</span>
+            </label>
+            <input
+              id="email"
+              type="email"
+              required
+              value={formData.email}
+              onChange={handleChange("email")}
+              aria-describedby={errors.email ? "email-error" : "email-helper"}
+              aria-invalid={!!errors.email}
+              className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold" name="email"/>
+            {errors.email ? (
+              <p id="email-error" className="mt-1 text-sm text-mansion-gold">
+                {errors.email}
+              </p>
+            ) : (
+              <p id="email-helper" className="mt-1 text-xs text-mansion-charcoal/50">
+                We send a confirmation and documentation checklist
               </p>
             )}
           </div>
