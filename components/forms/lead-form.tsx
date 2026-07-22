@@ -190,7 +190,7 @@ export function LeadForm() {
 
       const phoneDigits = formData.phone.replace(/\D/g, "");
 
-      const response = await fetch("/api/lead", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

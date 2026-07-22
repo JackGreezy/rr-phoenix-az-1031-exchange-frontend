@@ -174,7 +174,7 @@ export function ContactForm({ initialProjectType }: ContactFormProps) {
     const formData = new FormData(form);
 
     try {
-      const response = await fetch("/api/lead", {
+      const response = await fetch("/api/contact", {
         method: "POST",
         body: formData,
         headers: {
@@ -207,7 +207,7 @@ export function ContactForm({ initialProjectType }: ContactFormProps) {
       <form
         ref={formRef}
         id="contact-form"
-        action="/api/lead"
+        action="/api/contact"
         method="POST"
         onSubmit={handleSubmit}
         className="space-y-6"
