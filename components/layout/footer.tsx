@@ -91,12 +91,6 @@ export function Footer() {
                 <span className="text-white/50">Hours: </span>
                 {OFFICE_HOURS}
               </p>
-              {HAS_STAFFED_OFFICE && (
-                <p className="pt-2">
-                  <span className="text-white/50">Office: </span>
-                  {OFFICE_ADDRESS_LINE_1}, {OFFICE_ADDRESS_LINE_2}
-                </p>
-              )}
             </div>
             {/* Social Links */}
             <div className="mt-6 flex items-center gap-4">
