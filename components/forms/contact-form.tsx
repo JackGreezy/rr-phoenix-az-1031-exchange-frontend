@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { getAllServices } from "@/lib/services";
 import { PHONE_NUMBER } from "@/lib/config";
 import { ArrowRightIcon } from "@/components/icons";
 import Script from "next/script";
@@ -83,24 +82,10 @@ type ContactFormProps = {
   initialProjectType?: string;
 };
 
-export function ContactForm({ initialProjectType }: ContactFormProps) {
-  const [projectType, setProjectType] = useState(initialProjectType || "");
-  const [suggestions, setSuggestions] = useState<string[]>([]);
-  const [showSuggestions, setShowSuggestions] = useState(false);
+export function ContactForm({ initialProjectType: _initialProjectType }: ContactFormProps) {
   const [turnstileLoaded, setTurnstileLoaded] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
-  const inputRef = useRef<HTMLInputElement>(null);
-  const suggestionsRef = useRef<HTMLDivElement>(null);
   const turnstileRef = useRef<HTMLDivElement>(null);
-
-  const services = getAllServices();
-  const serviceNames = services.map((s) => s.name);
-
-  useEffect(() => {
-    if (initialProjectType) {
-      setProjectType(initialProjectType);
-    }
-  }, [initialProjectType]);
 
   useEffect(() => {
     if (turnstileLoaded && turnstileRef.current && typeof window !== "undefined" && (window as any).turnstile) {
@@ -111,45 +96,6 @@ export function ContactForm({ initialProjectType }: ContactFormProps) {
       });
     }
   }, [turnstileLoaded]);
-
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (
-        suggestionsRef.current &&
-        !suggestionsRef.current.contains(event.target as Node) &&
-        inputRef.current &&
-        !inputRef.current.contains(event.target as Node)
-      ) {
-        setShowSuggestions(false);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
-  const handleProjectTypeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = e.target.value;
-    setProjectType(value);
-
-    if (value.length > 0) {
-      const filtered = serviceNames.filter((name) =>
-        name.toLowerCase().includes(value.toLowerCase())
-      );
-      setSuggestions(filtered.slice(0, 5));
-      setShowSuggestions(true);
-    } else {
-      setSuggestions([]);
-      setShowSuggestions(false);
-    }
-  };
-
-  const handleSuggestionClick = (suggestion: string) => {
-    setProjectType(suggestion);
-    setSuggestions([]);
-    setShowSuggestions(false);
-    inputRef.current?.focus();
-  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -185,7 +131,6 @@ export function ContactForm({ initialProjectType }: ContactFormProps) {
       if (response.ok) {
         if (successMessage) successMessage.classList.remove("hidden");
         form.reset();
-        setProjectType("");
       } else {
         if (errorMessage) errorMessage.classList.remove("hidden");
       }
@@ -221,11 +166,13 @@ export function ContactForm({ initialProjectType }: ContactFormProps) {
           description="Your full name."
         />
         <FormField
-          label="Company"
-          name="company"
-          type="text"
-          autoComplete="organization"
-          description="Your company or organization name, if applicable."
+          label="Phone"
+          name="phone"
+          type="tel"
+          autoComplete="tel"
+          required
+          pattern="[0-9\s\-\(\)]+"
+          description="Your phone number for urgent timeline coordination."
         />
         <FormField
           label="Email"
@@ -236,78 +183,22 @@ export function ContactForm({ initialProjectType }: ContactFormProps) {
           pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}"
           description="A valid email address for follow-up communication."
         />
+        <label className="flex cursor-pointer items-center gap-3 rounded-2xl border border-[#2A2A2A]/20 bg-white/90 px-4 py-3 text-sm font-semibold text-[#2A2A2A]">
+          <input type="hidden" name="hasCompleted1031" value="No" />
+          <input
+            type="checkbox"
+            name="hasCompleted1031"
+            value="Yes"
+            className="h-4 w-4 shrink-0 accent-[#006E7F]"
+          />
+          Have you completed a 1031 exchange before?
+        </label>
         <FormField
-          label="Phone"
-          name="phone"
-          type="tel"
-          autoComplete="tel"
-          required
-          pattern="[0-9\s\-\(\)]+"
-          description="Your phone number for urgent timeline coordination."
-        />
-        <div className="flex flex-col gap-2">
-          <label
-            htmlFor="project-type"
-            className="text-sm font-semibold text-[#2A2A2A]"
-          >
-            Project Type
-            <span className="ml-1 text-[#006E7F]">(Required)</span>
-          </label>
-          <div className="relative">
-            <input
-              ref={inputRef}
-              id="project-type"
-              name="projectType"
-              type="text"
-              autoComplete="off"
-              required
-              value={projectType}
-              onChange={handleProjectTypeChange}
-              onFocus={() => {
-                if (suggestions.length > 0) {
-                  setShowSuggestions(true);
-                }
-              }}
-              aria-describedby="project-type-description"
-              className="w-full rounded-2xl border border-[#2A2A2A]/20 bg-white/90 px-4 py-3 text-sm text-[#2A2A2A] transition focus-visible:border-[#006E7F] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#006E7F]"
-            />
-            {showSuggestions && suggestions.length > 0 && (
-              <div
-                ref={suggestionsRef}
-                className="absolute z-10 mt-1 w-full rounded-2xl border border-white/70 bg-white shadow-[0_12px_40px_rgba(24,24,24,0.15)]"
-                role="listbox"
-              >
-                {suggestions.map((suggestion, idx) => (
-                  <button
-                    key={idx}
-                    type="button"
-                    onClick={() => handleSuggestionClick(suggestion)}
-                    className="w-full px-4 py-3 text-left text-sm text-[#2A2A2A] transition hover:bg-[#F5F3EF] focus-visible:bg-[#F5F3EF] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-0 focus-visible:outline-[#006E7F]"
-                    role="option"
-                  >
-                    {suggestion}
-                  </button>
-                ))}
-              </div>
-            )}
-          </div>
-          <p id="project-type-description" className="text-xs text-[#2A2A2A]/70">
-            Describe the type of exchange or service you need. Start typing to
-            see suggestions.
-          </p>
-        </div>
-        <FormField
-          label="Timeline"
-          name="timeline"
-          type="text"
-          description="Estimated timeline for your exchange, including key dates if known."
-        />
-        <FormField
-          label="Details"
-          name="details"
+          label="Notes"
+          name="notes"
           textarea
-          rows={4}
-          description="Share timeline specifics, replacement objectives, or advisory team contacts."
+          rows={5}
+          description="Share any exchange questions or context."
         />
         {process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && (
           <div className="flex justify-center">

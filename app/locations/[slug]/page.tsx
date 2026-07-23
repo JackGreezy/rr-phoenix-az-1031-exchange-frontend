@@ -11,6 +11,7 @@ import {
 import { ArrowRightIcon } from "@/components/icons";
 import { getLocationBatchData } from "@/lib/data-merger";
 import { getLocationImageSrc } from "@/lib/utils";
+import { getLocationRichContent } from "@/lib/location-rich-content";
 import Image from "next/image";
 
 type Props = {
@@ -52,6 +53,7 @@ export default async function LocationPage({ params }: Props) {
   }
 
   const batchData = getLocationBatchData(slug);
+  const richContent = getLocationRichContent(slug);
 
   return (
     <div className="min-h-screen bg-white">
@@ -98,13 +100,42 @@ export default async function LocationPage({ params }: Props) {
             )}
           </div>
 
+          {richContent?.sections && richContent.sections.length > 0 && (
+            <section className="mt-16 border-t border-gray-200 pt-12">
+              <p className="section-label mb-3">Local Market</p>
+              <h2 className="font-serif text-3xl text-mansion-charcoal">
+                {location.name} Investor Insights
+              </h2>
+              <div className="prose prose-lg mt-8 max-w-none space-y-10">
+                {richContent.sections.map((section, idx) => (
+                  <div
+                    key={idx}
+                    className="border-b border-gray-100 pb-8 last:border-0 last:pb-0"
+                  >
+                    {section.heading && (
+                      <h3 className="font-serif text-xl text-mansion-charcoal">
+                        {section.heading}
+                      </h3>
+                    )}
+                    <div
+                      className={`text-base leading-relaxed text-mansion-charcoal/80 ${
+                        section.heading ? "mt-3" : ""
+                      }`}
+                      dangerouslySetInnerHTML={{ __html: section.html }}
+                    />
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
           <section className="mt-16 border-t border-gray-200 pt-12">
             <p className="section-label mb-3">FAQ</p>
             <h2 className="font-serif text-3xl text-mansion-charcoal">
               Frequently Asked Questions
             </h2>
             <div className="mt-8 divide-y divide-gray-200">
-              {(batchData?.faqs ?? location.faq).map((faq, idx) => (
+              {(richContent?.faqs ?? batchData?.faqs ?? location.faq).map((faq, idx) => (
                 <details
                   key={idx}
                   className="group py-6"
