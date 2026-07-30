@@ -2,6 +2,34 @@ import type { ServiceItem } from "./types";
 
 export const servicesData: ServiceItem[] = [
   {
+    slug: "three-property-identification-strategy",
+    name: "Three Property Identification Strategy",
+    short: "Three property identification path planning and documentation.",
+    route: "/services/three-property-identification-strategy",
+    category: "Execution",
+  },
+  {
+    slug: "capital-gains-on-rental-property",
+    name: "Capital Gains on Rental Property",
+    short: "How capital gains tax is calculated on a Phoenix, AZ rental property sale, and how a 1031 exchange defers it.",
+    route: "/services/capital-gains-on-rental-property",
+    category: "Guides",
+  },
+  {
+    slug: "inherited-property-capital-gains",
+    name: "Inherited Property Capital Gains",
+    short: "How the stepped up basis rule affects capital gains on inherited Phoenix, AZ property, and when a 1031 exchange applies.",
+    route: "/services/inherited-property-capital-gains",
+    category: "Guides",
+  },
+  {
+    slug: "passive-real-estate-income",
+    name: "Passive Real Estate Income",
+    short: "How Phoenix, AZ investors generate passive real estate income through DST interests and net lease property.",
+    route: "/services/passive-real-estate-income",
+    category: "Guides",
+  },
+  {
     slug: "forward-exchange-coordination",
     name: "Forward Exchange Coordination",
     short: "Structured project management for investors selling and replacing property.",
@@ -9,11 +37,74 @@ export const servicesData: ServiceItem[] = [
     category: "Timelines",
   },
   {
+    slug: "qualified-intermediary-coordination",
+    name: "Qualified Intermediary Coordination",
+    short: "Third party qualified intermediary selection and coordination.",
+    route: "/services/qualified-intermediary-coordination",
+    category: "Execution",
+  },
+  {
+    slug: "dst-placement-advisory",
+    name: "DST Placement Advisory",
+    short: "Delaware Statutory Trust evaluation and placement coordination.",
+    route: "/services/dst-placement-advisory",
+    category: "Property Paths",
+  },
+  {
+    slug: "what-is-an-nnn-lease",
+    name: "What Is an NNN Lease",
+    short: "What an NNN lease actually requires of the tenant, and how to verify the terms before a Phoenix, AZ 1031 exchange.",
+    route: "/services/what-is-an-nnn-lease",
+    category: "Guides",
+  },
+  {
+    slug: "how-to-reduce-capital-gains-tax",
+    name: "How to Reduce Capital Gains Tax",
+    short: "An overview of legitimate strategies Phoenix, AZ sellers use to reduce capital gains tax, including the 1031 exchange.",
+    route: "/services/how-to-reduce-capital-gains-tax",
+    category: "Guides",
+  },
+  {
+    slug: "reverse-1031-exchange-explained",
+    name: "Reverse 1031 Exchange Explained",
+    short: "How a reverse exchange and titleholder structure works and when it applies.",
+    route: "/services/reverse-1031-exchange-explained",
+    category: "Guides",
+  },
+  {
+    slug: "the-180-day-exchange-deadline",
+    name: "The One Hundred Eighty Day Exchange Deadline",
+    short: "How the one hundred eighty day exchange period is calculated and coordinated.",
+    route: "/services/the-180-day-exchange-deadline",
+    category: "Guides",
+  },
+  {
     slug: "replacement-property-shortlist",
     name: "Replacement Property Shortlist",
     short: "Targeted replacement sourcing focused on cash flowing assets nationwide.",
     route: "/services/replacement-property-shortlist",
     category: "Property Paths",
+  },
+  {
+    slug: "the-qualified-intermediary-role",
+    name: "The Qualified Intermediary Role",
+    short: "What a qualified intermediary does and why the role must be independent.",
+    route: "/services/the-qualified-intermediary-role",
+    category: "Guides",
+  },
+  {
+    slug: "capital-gains-on-investment-property",
+    name: "Capital Gains on Investment Property",
+    short: "How capital gains tax applies to Phoenix, AZ investment property, and how a 1031 exchange defers the liability.",
+    route: "/services/capital-gains-on-investment-property",
+    category: "Guides",
+  },
+  {
+    slug: "the-45-day-identification-period",
+    name: "The Forty Five Day Identification Period",
+    short: "Plain language guide to the forty five day identification deadline and its rules.",
+    route: "/services/the-45-day-identification-period",
+    category: "Guides",
   },
   {
     slug: "reverse-exchange-structuring",
@@ -28,13 +119,6 @@ export const servicesData: ServiceItem[] = [
     short: "Build to suit and construction coordination within exchange timelines.",
     route: "/services/improvement-exchange-management",
     category: "Structures",
-  },
-  {
-    slug: "dst-placement-advisory",
-    name: "DST Placement Advisory",
-    short: "Delaware Statutory Trust evaluation and placement coordination.",
-    route: "/services/dst-placement-advisory",
-    category: "Property Paths",
   },
   {
     slug: "portfolio-alignment-consultation",
@@ -58,13 +142,6 @@ export const servicesData: ServiceItem[] = [
     category: "Timelines",
   },
   {
-    slug: "three-property-identification-strategy",
-    name: "Three Property Identification Strategy",
-    short: "Three property identification path planning and documentation.",
-    route: "/services/three-property-identification-strategy",
-    category: "Execution",
-  },
-  {
     slug: "two-hundred-percent-identification-strategy",
     name: "Two Hundred Percent Identification Strategy",
     short: "Two hundred percent identification path planning and documentation.",
@@ -76,13 +153,6 @@ export const servicesData: ServiceItem[] = [
     name: "Ninety Five Percent Identification Strategy",
     short: "Ninety five percent identification path planning and documentation.",
     route: "/services/ninety-five-percent-identification-strategy",
-    category: "Execution",
-  },
-  {
-    slug: "qualified-intermediary-coordination",
-    name: "Qualified Intermediary Coordination",
-    short: "Third party qualified intermediary selection and coordination.",
-    route: "/services/qualified-intermediary-coordination",
     category: "Execution",
   },
   {
@@ -156,20 +226,6 @@ export const servicesData: ServiceItem[] = [
     category: "Timelines",
   },
   {
-    slug: "the-45-day-identification-period",
-    name: "The Forty Five Day Identification Period",
-    short: "Plain language guide to the forty five day identification deadline and its rules.",
-    route: "/services/the-45-day-identification-period",
-    category: "Guides",
-  },
-  {
-    slug: "the-180-day-exchange-deadline",
-    name: "The One Hundred Eighty Day Exchange Deadline",
-    short: "How the one hundred eighty day exchange period is calculated and coordinated.",
-    route: "/services/the-180-day-exchange-deadline",
-    category: "Guides",
-  },
-  {
     slug: "what-is-boot-in-a-1031-exchange",
     name: "What Is Boot in a 1031 Exchange",
     short: "Explanation of cash and mortgage boot and how investors generally avoid it.",
@@ -177,24 +233,10 @@ export const servicesData: ServiceItem[] = [
     category: "Guides",
   },
   {
-    slug: "the-qualified-intermediary-role",
-    name: "The Qualified Intermediary Role",
-    short: "What a qualified intermediary does and why the role must be independent.",
-    route: "/services/the-qualified-intermediary-role",
-    category: "Guides",
-  },
-  {
     slug: "like-kind-property-explained",
     name: "Like Kind Property Explained",
     short: "What qualifies as like kind real property under Section 1031.",
     route: "/services/like-kind-property-explained",
-    category: "Guides",
-  },
-  {
-    slug: "reverse-1031-exchange-explained",
-    name: "Reverse 1031 Exchange Explained",
-    short: "How a reverse exchange and titleholder structure works and when it applies.",
-    route: "/services/reverse-1031-exchange-explained",
     category: "Guides",
   },
   {
@@ -212,20 +254,6 @@ export const servicesData: ServiceItem[] = [
     category: "Guides",
   },
   {
-    slug: "capital-gains-on-rental-property",
-    name: "Capital Gains on Rental Property",
-    short: "How capital gains tax is calculated on a Phoenix, AZ rental property sale, and how a 1031 exchange defers it.",
-    route: "/services/capital-gains-on-rental-property",
-    category: "Guides",
-  },
-  {
-    slug: "capital-gains-on-investment-property",
-    name: "Capital Gains on Investment Property",
-    short: "How capital gains tax applies to Phoenix, AZ investment property, and how a 1031 exchange defers the liability.",
-    route: "/services/capital-gains-on-investment-property",
-    category: "Guides",
-  },
-  {
     slug: "home-sale-capital-gains",
     name: "Home Sale Capital Gains",
     short: "How the Section 121 exclusion applies to a Phoenix, AZ primary residence sale, and why 1031 does not apply.",
@@ -237,13 +265,6 @@ export const servicesData: ServiceItem[] = [
     name: "Second Home Capital Gains Tax",
     short: "How Phoenix, AZ second homes are taxed on sale, and when the 1031 exchange investment use safe harbor applies.",
     route: "/services/second-home-capital-gains-tax",
-    category: "Guides",
-  },
-  {
-    slug: "inherited-property-capital-gains",
-    name: "Inherited Property Capital Gains",
-    short: "How the stepped up basis rule affects capital gains on inherited Phoenix, AZ property, and when a 1031 exchange applies.",
-    route: "/services/inherited-property-capital-gains",
     category: "Guides",
   },
   {
@@ -261,24 +282,10 @@ export const servicesData: ServiceItem[] = [
     category: "Guides",
   },
   {
-    slug: "how-to-reduce-capital-gains-tax",
-    name: "How to Reduce Capital Gains Tax",
-    short: "An overview of legitimate strategies Phoenix, AZ sellers use to reduce capital gains tax, including the 1031 exchange.",
-    route: "/services/how-to-reduce-capital-gains-tax",
-    category: "Guides",
-  },
-  {
     slug: "how-to-invest-in-real-estate",
     name: "How to Invest in Real Estate",
     short: "An overview of ways to invest in Phoenix, AZ real estate, from direct ownership to passive DST structures.",
     route: "/services/how-to-invest-in-real-estate",
-    category: "Guides",
-  },
-  {
-    slug: "passive-real-estate-income",
-    name: "Passive Real Estate Income",
-    short: "How Phoenix, AZ investors generate passive real estate income through DST interests and net lease property.",
-    route: "/services/passive-real-estate-income",
     category: "Guides",
   },
   {
@@ -331,13 +338,6 @@ export const servicesData: ServiceItem[] = [
     category: "Guides",
   },
   {
-    slug: "what-is-an-nnn-lease",
-    name: "What Is an NNN Lease",
-    short: "What an NNN lease actually requires of the tenant, and how to verify the terms before a Phoenix, AZ 1031 exchange.",
-    route: "/services/what-is-an-nnn-lease",
-    category: "Guides",
-  },
-  {
     slug: "self-storage-investing",
     name: "Self Storage Investing",
     short: "Fundamentals of self storage investing for Phoenix, AZ investors, including 1031 exchange acquisition considerations.",
@@ -378,7 +378,6 @@ export const servicesData: ServiceItem[] = [
     short: "Fundamentals of medical office investing for Phoenix, AZ investors, including 1031 exchange acquisition considerations.",
     route: "/services/medical-office-investing",
     category: "Guides",
-  },
-];
+  },];
 
 
