@@ -10,6 +10,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        "brand-dark": "#111827",
+        "brand-charcoal": "#1A1A1A",
+        "brand-copper": "#0EA5A6",
+        "brand-copper-light": "#0EA5A6",
+        "brand-gold": "#0EA5A6",
+        "brand-gold-dark": "#0EA5A6",
         // Mansion Global inspired palette
         mansion: {
           gold: "#8B7355",

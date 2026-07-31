@@ -1,4 +1,3 @@
-import ExchangeIntentSection from "../components/ExchangeIntentSection";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -730,7 +729,7 @@ export default function Page() {
 
         {/* Close content container */}
         </div>
-      <ExchangeIntentSection /></main>
+      </main>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
