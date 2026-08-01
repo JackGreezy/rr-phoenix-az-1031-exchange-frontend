@@ -39,9 +39,9 @@ import {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_DOMAIN),
-  title: "1031 Exchange Services Phoenix AZ | Qualified Intermediary Support",
+  title: "1031 Exchange Phoenix | Property & DST Options",
   description:
-    "Expert 1031 exchange services in Phoenix, Arizona. Property identification, qualified intermediary support, deadline management, and tax deferral guidance for all property types.",
+    "Phoenix owners ready for less landlord work can compare direct replacements and passive DST options while organizing the exchange timeline.",
   keywords: [
     "1031 exchange Phoenix",
     "qualified intermediary Arizona",
@@ -58,9 +58,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE_DOMAIN,
-    title: "1031 Exchange Services Phoenix AZ | Qualified Intermediary Support",
+    title: "1031 Exchange Phoenix | Property & DST Options",
     description:
-      "Expert 1031 exchange services in Phoenix, Arizona. Property identification, qualified intermediary support, and tax deferral guidance for all property types.",
+      "Phoenix owners ready for less landlord work can compare direct replacements and passive DST options while organizing the exchange timeline.",
     siteName: COMPANY_NAME,
     images: [
       {
@@ -73,9 +73,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "1031 Exchange Services Phoenix AZ | Qualified Intermediary Support",
+    title: "1031 Exchange Phoenix | Property & DST Options",
     description:
-      "Expert 1031 exchange services in Phoenix, Arizona. Property identification, qualified intermediary support, and tax deferral guidance for all property types.",
+      "Phoenix owners ready for less landlord work can compare direct replacements and passive DST options while organizing the exchange timeline.",
     images: [`${SITE_DOMAIN}/images/blog/desert-modern.svg`],
   },
   other: {

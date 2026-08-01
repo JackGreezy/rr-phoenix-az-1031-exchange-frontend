@@ -33,17 +33,17 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_DOMAIN),
   title: {
-    default: `${COMPANY_NAME} | Arizona 1031 Exchange Advisory`,
+    default: "1031 Exchange Phoenix | Property & DST Options",
     template: `%s | ${COMPANY_NAME}`,
   },
   description:
-    "1031 exchange guidance for Phoenix investors focused on compliant timelines, replacement sourcing, and advisor coordination.",
+    "Phoenix owners ready for less landlord work can compare direct replacements and passive DST options while organizing the exchange timeline.",
   openGraph: {
     type: "website",
     url: SITE_DOMAIN,
-    title: `${COMPANY_NAME} | Arizona 1031 Exchange Advisory`,
+    title: "1031 Exchange Phoenix | Property & DST Options",
     description:
-      "Phoenix-based exchange support for investors, CPAs, and developers managing 1031 timelines and replacement sourcing.",
+      "Phoenix owners ready for less landlord work can compare direct replacements and passive DST options while organizing the exchange timeline.",
     siteName: COMPANY_NAME,
     images: [
       {
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${COMPANY_NAME} | Arizona 1031 Exchange Advisory`,
+    title: "1031 Exchange Phoenix | Property & DST Options",
     description:
-      "Phoenix 1031 exchange specialists helping investors manage identification, replacement, and compliance.",
+      "Phoenix owners ready for less landlord work can compare direct replacements and passive DST options while organizing the exchange timeline.",
     images: [`${SITE_DOMAIN}/images/blog/desert-modern.svg`],
   },
   appleWebApp: {
@@ -98,6 +98,8 @@ export const metadata: Metadata = {
     "contact:phone_number": PHONE_NUMBER,
     "contact:email": SUPPORT_EMAIL,
   },
+
+  alternates: { canonical: "/" },
 };
 
 export default function RootLayout({
