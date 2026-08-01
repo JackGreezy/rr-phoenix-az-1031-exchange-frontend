@@ -39,9 +39,9 @@ import {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_DOMAIN),
-  title: "1031 Exchange Services Phoenix AZ | Qualified Intermediary Coordination",
+  title: "1031 Exchange Services Phoenix AZ | Qualified Intermediary Support",
   description:
-    "Expert 1031 exchange services in Phoenix, Arizona. Property identification, qualified intermediary coordination, deadline management, and tax deferral guidance for all property types.",
+    "Expert 1031 exchange services in Phoenix, Arizona. Property identification, qualified intermediary support, deadline management, and tax deferral guidance for all property types.",
   keywords: [
     "1031 exchange Phoenix",
     "qualified intermediary Arizona",
@@ -58,9 +58,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: SITE_DOMAIN,
-    title: "1031 Exchange Services Phoenix AZ | Qualified Intermediary Coordination",
+    title: "1031 Exchange Services Phoenix AZ | Qualified Intermediary Support",
     description:
-      "Expert 1031 exchange services in Phoenix, Arizona. Property identification, qualified intermediary coordination, and tax deferral guidance for all property types.",
+      "Expert 1031 exchange services in Phoenix, Arizona. Property identification, qualified intermediary support, and tax deferral guidance for all property types.",
     siteName: COMPANY_NAME,
     images: [
       {
@@ -73,9 +73,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "1031 Exchange Services Phoenix AZ | Qualified Intermediary Coordination",
+    title: "1031 Exchange Services Phoenix AZ | Qualified Intermediary Support",
     description:
-      "Expert 1031 exchange services in Phoenix, Arizona. Property identification, qualified intermediary coordination, and tax deferral guidance for all property types.",
+      "Expert 1031 exchange services in Phoenix, Arizona. Property identification, qualified intermediary support, and tax deferral guidance for all property types.",
     images: [`${SITE_DOMAIN}/images/blog/desert-modern.svg`],
   },
   other: {
@@ -200,7 +200,7 @@ const organizationJsonLd = {
     name: "Arizona",
   },
   serviceType: "1031 Exchange Advisory Services",
-  description: "Full-service 1031 exchange coordination for Arizona investors. Property identification, qualified intermediary guidance, deadline management, and tax deferral strategies.",
+  description: "Full-service 1031 exchange solutions for Arizona investors. Property identification, qualified intermediary guidance, deadline management, and tax deferral strategies.",
 };
 
 const localBusinessJsonLd = {
@@ -245,7 +245,7 @@ const professionalServiceJsonLd = {
     "@type": "State",
     name: "Arizona",
   },
-  description: "Full-service 1031 exchange coordination including property identification, qualified intermediary guidance, deadline management, and tax deferral strategies for Arizona investors.",
+  description: "Full-service 1031 exchange solutions including property identification, qualified intermediary guidance, deadline management, and tax deferral strategies for Arizona investors.",
 };
 
 const websiteJsonLd = {
@@ -303,7 +303,7 @@ export default function Page() {
                   Expert 1031 Exchange Services in Phoenix, Arizona.
                 </h1>
                 <p className="mt-6 text-lg text-white/90 sm:text-xl">
-                  Full-service 1031 exchange coordination for Arizona investors. Property identification, qualified intermediary guidance, deadline management, and tax deferral strategies for all property types.
+                  Full-service 1031 exchange solutions for Arizona investors. Property identification, qualified intermediary guidance, deadline management, and tax deferral strategies for all property types.
                 </p>
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                   <Link
@@ -340,9 +340,7 @@ export default function Page() {
               <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl lg:text-5xl">
                 Why Phoenix Investors Trust Us.
               </h2>
-              <p className="mt-6 text-base leading-relaxed text-mansion-charcoal/70">
-                We provide comprehensive 1031 exchange services for Arizona investors. From property identification to qualified intermediary coordination, we guide you through every step of your tax-deferred exchange.
-              </p>
+              <p className="mt-6 text-base leading-relaxed text-mansion-charcoal/70">A Phoenix owner may be selling because property operations are exhausting, insurance and capital work are changing returns, or too much equity sits in one desert-market asset. We help define what the replacement must do better and organize direct, net-lease, and passive paths before day 45.</p>
               <div className="mt-6 border-t border-gray-200 pt-6 text-sm text-mansion-charcoal/60">
                 A 1031 exchange defers federal and Arizona income tax on qualifying
                 real property. It does not remove state or county transfer taxes.{" "}
@@ -364,7 +362,7 @@ export default function Page() {
                   icon: MapPinIcon,
                 },
                 {
-                  title: "Qualified Intermediary Coordination",
+                  title: "Qualified Intermediary Support",
                   description:
                     "We work with trusted QIs to ensure proper exchange structuring, fund segregation, and IRS compliance throughout your exchange.",
                   icon: SearchIcon,
@@ -488,11 +486,9 @@ export default function Page() {
           <header className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div className="max-w-2xl">
               <p className="section-label mb-3">Our Services</p>
-              <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl">
-                Complete 1031 Exchange Services.
-              </h2>
+              <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl">Complete Phoenix 1031 Exchange Solutions.</h2>
               <p className="mt-4 text-base text-mansion-charcoal/70">
-                From initial consultation to closing, we provide comprehensive support for your 1031 exchange. Property identification, QI coordination, and deadline management for all property types.
+                From initial consultation to closing, we provide comprehensive support for your 1031 exchange. Property identification, QI support, and deadline management for all property types.
               </p>
             </div>
             <Link
@@ -512,18 +508,14 @@ export default function Page() {
             <div className="max-w-2xl">
               <p className="section-label mb-3">Property Types</p>
               <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl">
-                Replacement Property Options.
+                Replacement Property Without Daily Management
               </h2>
-              <p className="mt-4 text-base text-mansion-charcoal/70">
-                We help identify replacement properties across all asset classes. Whether you're seeking passive income, appreciation, or a combination, we find properties that meet your investment goals.
-              </p>
+              <p className="mt-4 text-base text-mansion-charcoal/70">DST ownership may give Phoenix sellers fractional access to professionally managed, institutional-quality real estate with no day-to-day tenant or maintenance decisions. Certain offerings may begin near $100,000; minimums, availability, projected distributions, fees, leverage, sponsor and property risk, liquidity limits, eligibility, and suitability vary.</p>
             </div>
             <Link
-              href="/property-types"
+              href="/contact?request=guide"
               className="inline-flex items-center gap-2 text-sm font-semibold text-mansion-gold hover:text-mansion-gold-dark"
-            >
-              Explore property types
-              <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
+            >Get Free Phoenix 1031 Information<ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
             </Link>
           </header>
           
@@ -684,11 +676,9 @@ export default function Page() {
           </div>
           <div className="mt-8 flex justify-center">
             <Link
-              href="/tools"
+              href="/contact?request=properties"
               className="inline-flex items-center gap-2 text-sm font-semibold text-mansion-gold hover:text-mansion-gold-dark"
-            >
-              View all tools
-              <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
+            >Request the Phoenix Property List<ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
             </Link>
           </div>
         </section>
