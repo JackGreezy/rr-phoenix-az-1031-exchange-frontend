@@ -3,32 +3,28 @@ import {
   COMPANY_NAME,
   GOOGLE_MAP_EMBED,
   HAS_STAFFED_OFFICE,
-  OFFICE_ADDRESS_LINE_1,
-  OFFICE_ADDRESS_LINE_2,
   OFFICE_HOURS,
   PHONE_NUMBER,
   PHONE_NUMBER_URI,
-  PRIMARY_CITY,
-  PRIMARY_STATE_ABBR,
   SOCIAL_LINKS,
   SUPPORT_EMAIL,
 } from "@/lib/config";
 import { getAllLocations } from "@/lib/locations";
-import { getAllServices } from "@/lib/services";
 
 const footerLocations = getAllLocations();
-const footerServices = getAllServices();
+
+const footerServices = [
+  { name: "Turnkey Exchange Solutions", slug: "forward-exchange-coordination" },
+  { name: "Replacement Property Search", slug: "replacement-property-shortlist" },
+  { name: "DST & Passive Options", slug: "dst-placement-advisory" },
+  { name: "Qualified Intermediary Introduction", slug: "qualified-intermediary-coordination" },
+  { name: "Inherited Investment Property", slug: "inherited-property-capital-gains" },
+];
 
 // Social icons SVGs
 const FacebookIcon = () => (
   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
     <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
-  </svg>
-);
-
-const XIcon = () => (
-  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
   </svg>
 );
 
@@ -66,7 +62,7 @@ export function Footer() {
           <div className="col-span-2 md:col-span-2 lg:col-span-2">
             <h2 className="font-serif text-2xl text-white">{COMPANY_NAME}</h2>
             <p className="mt-3 text-sm leading-6 text-white/70">
-              Full-service 1031 exchange coordination for Arizona investors. Property identification, qualified intermediary guidance, and deadline management.
+              Turnkey 1031 exchange solutions for Arizona property owners—from the planned sale and independent qualified intermediary introduction to direct, net-lease, and DST replacement options.
             </p>
             <div className="mt-6 space-y-2 text-sm text-white/80">
               <p>
@@ -177,6 +173,9 @@ export function Footer() {
               <li>
                 <Link href="/property-types" className="text-xs text-white/70 transition hover:text-white">Property Types</Link>
               </li>
+              <li>
+                <Link href="/contact?request=properties" className="text-xs text-mansion-gold-light hover:text-mansion-gold">Free Property List</Link>
+              </li>
             </ul>
             <h3 className="mt-6 text-xs font-semibold uppercase tracking-wider text-white/50">Legal</h3>
             <ul className="mt-3 space-y-2">
@@ -190,29 +189,6 @@ export function Footer() {
           </div>
         </div>
 
-        {/* IRS Resources */}
-        <div className="mt-10 border-t border-white/10 pt-6">
-          <p className="text-xs text-white/50">
-            IRS Resources:{" "}
-            <Link
-              href="https://www.irs.gov/forms-pubs/about-form-8824"
-              className="text-mansion-gold-light hover:text-mansion-gold"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Form 8824
-            </Link>
-            {" | "}
-            <Link
-              href="https://www.irs.gov/tax-professionals/section-1031-like-kind-exchanges"
-              className="text-mansion-gold-light hover:text-mansion-gold"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Like-Kind Exchanges
-            </Link>
-          </p>
-        </div>
       </div>
 
       {/* Bottom Bar */}

@@ -4,11 +4,12 @@ import Link from "next/link";
 import { Breadcrumbs } from "@/components/navigation/breadcrumbs";
 import { getLocationBySlug, getAllLocations } from "@/lib/locations";
 import {
-  PRIMARY_CITY,
+  PHONE_NUMBER,
+  PHONE_NUMBER_URI,
   PRIMARY_STATE_ABBR,
   SITE_DOMAIN,
 } from "@/lib/config";
-import { ArrowRightIcon } from "@/components/icons";
+import { ArrowRightIcon, PhoneIcon } from "@/components/icons";
 import { getLocationBatchData } from "@/lib/data-merger";
 import { getLocationImageSrc } from "@/lib/utils";
 import { getLocationRichContent } from "@/lib/location-rich-content";
@@ -160,10 +161,7 @@ export default async function LocationPage({ params }: Props) {
               Available Services
             </h2>
             <p className="mt-4 text-base text-mansion-charcoal/70">
-              We provide comprehensive 1031 exchange support for investors in{" "}
-              {location.name}, {PRIMARY_STATE_ABBR}. Our services include
-              replacement property identification, timeline management, and
-              compliance coordination.
+              Get turnkey 1031 exchange solutions for a planned sale in {location.name}, {PRIMARY_STATE_ABBR}, including direct, net-lease, and DST replacement-property choices plus the independent professional handoffs the transaction requires.
             </p>
             <Link
               href="/services"
@@ -176,19 +174,21 @@ export default async function LocationPage({ params }: Props) {
 
           <div className="mt-16 border border-gray-200 bg-white p-10 text-center shadow-editorial">
             <h2 className="font-serif text-3xl text-mansion-charcoal">
-              Ready to discuss your exchange?
+              Build a {location.name} Sale-to-Replacement Plan
             </h2>
             <p className="mt-4 text-base text-mansion-charcoal/70">
-              Connect with our team to discuss your 1031 exchange needs in{" "}
-              {location.name}, {PRIMARY_STATE_ABBR}.
+              Share the planned sale, request a free property list, or talk through direct and passive replacement options with a Phoenix 1031 expert.
             </p>
-            <Link
-              href="/contact"
-              className="mt-6 inline-flex items-center justify-center gap-2 bg-mansion-gold px-6 py-3 text-base font-semibold text-white transition hover:bg-mansion-gold-dark"
-            >
-              Contact Us
-              <ArrowRightIcon className="h-5 w-5" />
-            </Link>
+            <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+              <Link href="/contact?request=properties" className="inline-flex items-center justify-center gap-2 bg-mansion-gold px-6 py-3 text-base font-semibold text-white transition hover:bg-mansion-gold-dark">
+                Get a Free Property List
+                <ArrowRightIcon className="h-5 w-5" aria-hidden="true" />
+              </Link>
+              <Link href={`tel:${PHONE_NUMBER_URI}`} className="inline-flex items-center justify-center gap-2 border border-mansion-gold px-6 py-3 text-base font-semibold text-mansion-gold transition hover:bg-mansion-gold hover:text-white">
+                <PhoneIcon className="h-5 w-5" aria-hidden="true" />
+                Call {PHONE_NUMBER}
+              </Link>
+            </div>
           </div>
 
           <div className="mt-8 flex justify-center">

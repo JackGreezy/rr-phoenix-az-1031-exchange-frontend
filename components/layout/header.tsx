@@ -34,12 +34,8 @@ export function Header() {
     return () => window.removeEventListener("keydown", handleKeydown);
   }, []);
 
-  useEffect(() => {
-    setOpenMenu(null);
-  }, [pathname]);
-
   const navLinkClasses =
-    "relative inline-flex items-center gap-1 px-4 py-2 text-sm font-medium tracking-wide transition-colors hover:text-mansion-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mansion-gold";
+    "relative inline-flex items-center gap-1 px-3 py-2 text-sm font-medium tracking-wide transition-colors hover:text-mansion-gold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-mansion-gold";
 
   return (
     <header className="sticky top-0 z-40 bg-white shadow-sm">
@@ -57,7 +53,7 @@ export function Header() {
             alt={COMPANY_NAME}
             width={220}
             height={65}
-            className="h-auto w-auto max-h-14"
+            className="h-auto w-auto max-h-14 max-w-[170px] sm:max-w-[220px]"
             priority
           />
         </Link>
@@ -347,8 +343,17 @@ export function Header() {
           </Link>
 
           <Link
+            href={`tel:${PHONE_NUMBER_URI}`}
+            className="ml-2 inline-flex h-10 items-center justify-center gap-2 px-3 text-sm font-semibold text-mansion-gold transition hover:text-mansion-gold-dark"
+            aria-label={`Call ${PHONE_NUMBER}`}
+          >
+            <PhoneIcon className="h-4 w-4" aria-hidden="true" />
+            {PHONE_NUMBER}
+          </Link>
+
+          <Link
             href="/contact"
-            className="ml-4 inline-flex h-10 items-center justify-center border-2 border-mansion-gold bg-transparent px-6 text-sm font-semibold text-mansion-gold transition hover:bg-mansion-gold hover:text-white"
+            className="ml-2 inline-flex h-10 items-center justify-center border-2 border-mansion-gold bg-transparent px-5 text-sm font-semibold text-mansion-gold transition hover:bg-mansion-gold hover:text-white"
           >
             Contact
           </Link>
@@ -374,4 +379,3 @@ export function Header() {
     </header>
   );
 }
-

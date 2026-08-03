@@ -6,11 +6,13 @@ import { Breadcrumbs } from "@/components/navigation/breadcrumbs";
 import { getPropertyTypeBySlug, getAllPropertyTypes } from "@/lib/property-types";
 import {
   COMPANY_NAME,
+  PHONE_NUMBER,
+  PHONE_NUMBER_URI,
   PRIMARY_CITY,
   PRIMARY_STATE_ABBR,
   SITE_DOMAIN,
 } from "@/lib/config";
-import { ArrowRightIcon } from "@/components/icons";
+import { ArrowRightIcon, PhoneIcon } from "@/components/icons";
 import { getPropertyTypeBatchData } from "@/lib/data-merger";
 import { getPropertyTypeImageSrc } from "@/lib/utils";
 
@@ -148,18 +150,21 @@ export default async function PropertyTypePage({ params }: Props) {
 
           <div className="mt-16 border border-gray-200 bg-white p-10 text-center shadow-editorial">
             <h2 className="font-serif text-3xl text-mansion-charcoal">
-              Ready to discuss your exchange?
+              See Current {propertyType.name} and Passive Alternatives
             </h2>
             <p className="mt-4 text-base text-mansion-charcoal/70">
-              Connect with our team to discuss {propertyType.name} replacement properties for your 1031 exchange in {PRIMARY_CITY}, {PRIMARY_STATE_ABBR}.
+              Compare {propertyType.name} candidates with other direct, net-lease, and DST replacement paths for a {PRIMARY_CITY} 1031 exchange.
             </p>
-            <Link
-              href="/contact"
-              className="mt-6 inline-flex items-center justify-center gap-2 bg-mansion-gold px-6 py-3 text-base font-semibold text-white transition hover:bg-mansion-gold-dark"
-            >
-              Contact Us
-              <ArrowRightIcon className="h-5 w-5" />
-            </Link>
+            <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+              <Link href="/contact?request=properties" className="inline-flex items-center justify-center gap-2 bg-mansion-gold px-6 py-3 text-base font-semibold text-white transition hover:bg-mansion-gold-dark">
+                Get a Free Property List
+                <ArrowRightIcon className="h-5 w-5" aria-hidden="true" />
+              </Link>
+              <Link href={`tel:${PHONE_NUMBER_URI}`} className="inline-flex items-center justify-center gap-2 border border-mansion-gold px-6 py-3 text-base font-semibold text-mansion-gold transition hover:bg-mansion-gold hover:text-white">
+                <PhoneIcon className="h-5 w-5" aria-hidden="true" />
+                Call {PHONE_NUMBER}
+              </Link>
+            </div>
           </div>
 
           <div className="mt-8 flex justify-center">

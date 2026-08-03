@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect, useRef, FormEvent } from "react";
-import { PHONE_NUMBER } from "@/lib/config";
 
 declare global {
   interface Window {
@@ -236,9 +235,9 @@ export function LeadForm() {
       onSubmit={handleSubmit}
       className="border border-gray-200 bg-white p-8 shadow-editorial md:p-10">
       <h2 className="mb-2 font-serif text-3xl text-mansion-charcoal">
-        Start Your Exchange Plan
+        Get Free Phoenix 1031 Exchange Guidance
       </h2>
-      <p className="mb-8 text-sm text-mansion-charcoal/60">Fill out the form below and a specialist will contact you within one business day.</p>
+      <p className="mb-8 text-sm text-mansion-charcoal/60">Share the basics of the planned sale. A Phoenix 1031 specialist will follow up to discuss timing, replacement priorities, and available property options.</p>
       <fieldset disabled={status === "submitting"} className="space-y-6">
         <div className="grid gap-6 md:grid-cols-2">
           <div>
@@ -336,7 +335,7 @@ export function LeadForm() {
             onChange={handleChange("notes")}
             className="w-full border border-gray-200 bg-white px-4 py-3 text-mansion-charcoal focus:border-mansion-gold focus:outline-none focus:ring-1 focus:ring-mansion-gold" name="notes" rows={5} placeholder="Share any exchange questions or context"></textarea>
           <p id="message-helper" className="mt-1 text-xs text-mansion-charcoal/50">
-            Outline goals, replacement preferences, or coordination needs
+            Outline goals, replacement preferences, or questions about the planned sale
           </p>
         </div>
 
@@ -344,7 +343,7 @@ export function LeadForm() {
           type="submit"
           className="w-full bg-mansion-gold px-8 py-4 text-base font-semibold text-white transition hover:bg-mansion-gold-dark focus:outline-none focus:ring-2 focus:ring-mansion-gold focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
         >
-          {status === "submitting" ? "Submitting..." : "Submit Consultation Request"}
+          {status === "submitting" ? "Submitting..." : "Start My Exchange"}
         </button>
         <p className="text-center text-xs text-mansion-charcoal/50">Educational content only. Not tax or legal advice.</p>
         {feedback && (

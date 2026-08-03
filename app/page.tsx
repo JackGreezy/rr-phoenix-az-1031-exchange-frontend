@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import { services, type Service } from "@/lib/services";
 import { locations } from "@/lib/locations";
 import {
   ArrowRightIcon,
@@ -9,169 +8,113 @@ import {
   CalendarIcon,
   ClockIcon,
   LandmarkIcon,
-  MapPinIcon,
   PhoneIcon,
   ScaleIcon,
   SearchIcon,
-  ShieldIcon,
   ShieldCheckIcon,
 } from "@/components/icons";
-import { HomepageServiceGrid } from "@/components/homepage/homepage-service-grid";
 import { HomepageServiceArea } from "@/components/homepage/homepage-service-area";
-import { HomepagePropertyTypes } from "@/components/homepage/homepage-property-types";
-import { DeadlineCalculator } from "@/components/widgets/deadline-calculator";
-import { IdentificationRules } from "@/components/widgets/identification-rules";
-import { TimelineTracker } from "@/components/widgets/timeline-tracker";
 import { LeadForm } from "@/components/forms/lead-form";
 import {
   COMPANY_NAME,
-  HAS_STAFFED_OFFICE,
   OFFICE_ADDRESS_LINE_1,
-  OFFICE_ADDRESS_LINE_2,
-  OFFICE_HOURS,
   PHONE_NUMBER,
   PHONE_NUMBER_URI,
-  PRIMARY_CITY,
-  PRIMARY_STATE_ABBR,
   SITE_DOMAIN,
   SUPPORT_EMAIL,
 } from "@/lib/config";
 
+const pageTitle = "1031 Exchange Phoenix | Turnkey Property & DST Solutions";
+const pageDescription =
+  "Get turnkey 1031 exchange help in Phoenix. Compare direct property, net-lease and DST options, request a free property list, or call (602) 669-7981.";
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_DOMAIN),
-  title: "1031 Exchange Phoenix | Property & DST Options",
-  description:
-    "Phoenix owners ready for less landlord work can compare direct replacements and passive DST options while organizing the exchange timeline.",
+  title: pageTitle,
+  description: pageDescription,
   keywords: [
     "1031 exchange Phoenix",
-    "qualified intermediary Arizona",
-    "1031 exchange services",
-    "property identification",
-    "tax deferred exchange",
-    "like-kind exchange",
-    "1031 exchange deadline",
-    "replacement property",
+    "Phoenix 1031 exchange company",
+    "1031 exchange properties Phoenix",
+    "DST properties Phoenix",
+    "passive 1031 exchange investments",
+    "qualified intermediary Phoenix",
+    "replacement property Phoenix",
   ],
-  alternates: {
-    canonical: SITE_DOMAIN,
-  },
+  alternates: { canonical: SITE_DOMAIN },
   openGraph: {
     type: "website",
     url: SITE_DOMAIN,
-    title: "1031 Exchange Phoenix | Property & DST Options",
-    description:
-      "Phoenix owners ready for less landlord work can compare direct replacements and passive DST options while organizing the exchange timeline.",
+    title: pageTitle,
+    description: pageDescription,
     siteName: COMPANY_NAME,
     images: [
       {
-        url: `${SITE_DOMAIN}/images/blog/desert-modern.svg`,
+        url: `${SITE_DOMAIN}/1031-exchange-of-phoenix-az.jpg`,
         width: 1200,
         height: 630,
-        alt: "Desert modern skyline representing 1031 Exchange of Phoenix.",
+        alt: "Phoenix skyline and turnkey 1031 exchange solutions.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "1031 Exchange Phoenix | Property & DST Options",
-    description:
-      "Phoenix owners ready for less landlord work can compare direct replacements and passive DST options while organizing the exchange timeline.",
-    images: [`${SITE_DOMAIN}/images/blog/desert-modern.svg`],
-  },
-  other: {
-    "og:locale": "en_US",
+    title: pageTitle,
+    description: pageDescription,
+    images: [`${SITE_DOMAIN}/1031-exchange-of-phoenix-az.jpg`],
   },
 };
-
-const highlightedServiceSlugs = [
-  "forward-exchange-coordination",
-  "replacement-property-shortlist",
-  "reverse-exchange-structuring",
-  "improvement-exchange-management",
-  "dst-placement-advisory",
-  "portfolio-alignment-consultation",
-] as const;
-
-const highlightedServices = highlightedServiceSlugs
-  .map((slug) => services.find((service) => service.slug === slug))
-  .filter((service): service is Service => Boolean(service));
-
-
-type PropertyType = {
-  title: string;
-  benefit: string;
-  slug: string;
-};
-
-const propertyTypes: PropertyType[] = [
-  {
-    title: "Multifamily",
-    benefit:
-      "Apartment buildings and residential complexes. Steady rental income with potential for value-add improvements and long-term appreciation.",
-    slug: "multifamily",
-  },
-  {
-    title: "Industrial & Warehouse",
-    benefit:
-      "Distribution centers, flex space, and manufacturing facilities. Strong demand from e-commerce and logistics growth.",
-    slug: "industrial-warehouse",
-  },
-  {
-    title: "Retail Properties",
-    benefit:
-      "Shopping centers, strip malls, and single-tenant retail. Diverse tenant mixes or credit tenants with long-term leases.",
-    slug: "retail",
-  },
-  {
-    title: "Office Buildings",
-    benefit:
-      "Class A, B, and medical office properties. Professional tenants with multi-year leases and built-in escalations.",
-    slug: "office",
-  },
-  {
-    title: "DST Investments",
-    benefit:
-      "Delaware Statutory Trust fractional ownership. Passive income without management responsibilities, ideal for hands-off investors.",
-    slug: "dst-investments",
-  },
-  {
-    title: "Mixed-Use Properties",
-    benefit:
-      "Combined retail, office, and residential assets. Diversified income streams with reduced single-tenant risk.",
-    slug: "mixed-use",
-  },
-];
 
 const faqs = [
   {
-    question: "What is a 1031 exchange?",
+    question: "Can one team help with my entire Phoenix 1031 exchange?",
     answer:
-      "A 1031 exchange, named after Section 1031 of the Internal Revenue Code, allows real estate investors to defer capital gains taxes when selling an investment property by reinvesting the proceeds into a like-kind replacement property. This powerful tax deferral strategy preserves equity for continued investment growth.",
+      "Yes. We help Phoenix property owners organize the sale objective, connect with an independent qualified intermediary, define replacement criteria, compare direct and passive property choices, and keep the right professionals aligned through replacement closing. Tax, legal, securities, lending, and intermediary work remains with the appropriate independent professionals.",
   },
   {
-    question: "What are the 45 and 180 day deadlines?",
+    question: "How early should I start planning a 1031 exchange?",
     answer:
-      "The 45-day identification period begins the day the relinquished property closes and requires a written identification of replacement candidates delivered to the intermediary by midnight of day 45. The 180-day exchange period runs concurrently and ends on the 180th calendar day or the tax filing date, whichever comes first, unless an extension is properly filed.",
+      "The best time is before the Phoenix property is listed or placed under contract. Early planning creates time to clarify ownership, expected equity, debt, income goals, management preferences, financing, and the replacement-property search before the exchange calendar begins.",
   },
   {
-    question: "What is a qualified intermediary?",
+    question: "Can I sell in Arizona and buy replacement property elsewhere?",
     answer:
-      "A qualified intermediary (QI) is a neutral third party who holds the exchange proceeds between the sale of your relinquished property and the purchase of your replacement property. The QI ensures proper fund segregation and helps maintain IRS compliance throughout your exchange.",
+      "A qualifying Phoenix investment property may generally be exchanged for qualifying investment real estate elsewhere in the United States. The replacement search can include local and nationwide direct property, net-lease property, and available DST interests.",
   },
   {
-    question: "What property types qualify for a 1031 exchange?",
+    question: "What is a DST in a 1031 exchange?",
     answer:
-      "Most investment and business real estate qualifies for 1031 treatment, including multifamily, retail, industrial, office, land, and mixed-use properties. The key requirement is that both properties must be held for investment or business use—not personal residences.",
+      "A Delaware Statutory Trust can offer fractional ownership in professionally managed real estate. A DST may qualify as replacement property for eligible investors, but offerings differ in assets, sponsors, leverage, fees, projected distributions, risks, liquidity limits, minimums, and suitability.",
   },
   {
-    question: "How do you help with property identification?",
+    question: "Can a 1031 exchange help me leave property management behind?",
     answer:
-      "We help identify replacement properties that meet your investment criteria, timeline, and tax deferral goals. Our team sources options across all asset classes and coordinates with brokers, lenders, and your advisors to ensure timely identification within the 45-day window.",
+      "It can. Owners who are tired of tenants, maintenance calls, vacancies, renovations, and leasing decisions can compare another direct property with net-lease and professionally managed DST options. Each path has different levels of control, workload, liquidity, financing, and risk.",
   },
   {
-    question: "What is boot and how can it be avoided?",
+    question: "What is the minimum investment for a DST?",
     answer:
-      "Boot is taxable gain that occurs when you receive cash, reduce debt, or acquire property of lesser value in your exchange. We help structure exchanges to minimize or eliminate boot through proper debt replacement planning and equity reinvestment strategies.",
+      "Some DST offerings may begin around $100,000, while minimums and investor requirements vary. Current availability, offering documents, fees, leverage, property risk, sponsor experience, illiquidity, and suitability must all be reviewed before making a decision.",
+  },
+  {
+    question: "How do direct property, net-lease property, and a DST compare?",
+    answer:
+      "Direct ownership usually offers the most control and management responsibility. Net-lease property can shift specified obligations to a tenant while retaining direct ownership. A DST is professionally managed and typically offers less control and limited liquidity. The right fit depends on the owner’s objectives and transaction facts.",
+  },
+  {
+    question: "Can inherited investment property be used in a 1031 exchange?",
+    answer:
+      "Inherited property may qualify when it is held for investment or business use, but basis, ownership, estate planning, co-owner goals, and prior use can change the analysis. Those facts should be reviewed with a CPA and attorney before the property is sold.",
+  },
+  {
+    question: "Can I get a current list of replacement properties?",
+    answer:
+      "Yes. Submit the short property-list request with the sale timing, approximate exchange equity, and preferred ownership style. Available direct, net-lease, and DST choices can then be discussed against the actual Phoenix exchange plan.",
+  },
+  {
+    question: "What if my Phoenix property is already under contract?",
+    answer:
+      "Call immediately. There may still be time to engage an independent qualified intermediary before closing and organize the replacement search. Exchange proceeds generally cannot be received by the seller without jeopardizing deferral.",
   },
 ];
 
@@ -191,16 +134,9 @@ const organizationJsonLd = {
     postalCode: "85024",
     addressCountry: "US",
   },
-  sameAs: [
-    "https://www.linkedin.com/company/1031-exchange-of-phoenix",
-    "https://www.facebook.com/1031exchangephoenix",
-  ],
-  areaServed: {
-    "@type": "State",
-    name: "Arizona",
-  },
-  serviceType: "1031 Exchange Advisory Services",
-  description: "Full-service 1031 exchange solutions for Arizona investors. Property identification, qualified intermediary guidance, deadline management, and tax deferral strategies.",
+  areaServed: { "@type": "State", name: "Arizona" },
+  serviceType: "Turnkey 1031 Exchange Solutions",
+  description: pageDescription,
 };
 
 const localBusinessJsonLd = {
@@ -227,36 +163,27 @@ const localBusinessJsonLd = {
   },
   openingHours: "Mo-Su 00:00-23:59",
   priceRange: "$$",
-  areaServed: {
-    "@type": "Country",
-    name: "United States",
-  },
+  areaServed: { "@type": "Country", name: "United States" },
 };
 
 const professionalServiceJsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: COMPANY_NAME,
-  provider: {
-    "@id": `${SITE_DOMAIN}#localbusiness`,
-  },
-  serviceType: "1031 Exchange Advisory Services",
-  areaServed: {
-    "@type": "State",
-    name: "Arizona",
-  },
-  description: "Full-service 1031 exchange solutions including property identification, qualified intermediary guidance, deadline management, and tax deferral strategies for Arizona investors.",
+  provider: { "@id": `${SITE_DOMAIN}#localbusiness` },
+  serviceType: "Turnkey 1031 Exchange Solutions",
+  areaServed: { "@type": "State", name: "Arizona" },
+  description: pageDescription,
 };
 
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  name: "1031 Exchange of Phoenix",
+  name: COMPANY_NAME,
   url: SITE_DOMAIN,
   potentialAction: {
     "@type": "SearchAction",
-    target:
-      "https://1031exchangeofphoenix.com/search?query={search_term_string}",
+    target: `${SITE_DOMAIN}/search?query={search_term_string}`,
     "query-input": "required name=search_term_string",
   },
 };
@@ -267,10 +194,7 @@ const faqJsonLd = {
   mainEntity: faqs.map((faq) => ({
     "@type": "Question",
     name: faq.question,
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: faq.answer,
-    },
+    acceptedAnswer: { "@type": "Answer", text: faq.answer },
   })),
 };
 
@@ -278,468 +202,293 @@ export default function Page() {
   return (
     <div className="relative bg-white text-mansion-charcoal">
       <main className="relative">
-        {/* Hero Section - Mansion Global full-bleed style */}
-        <section className="relative h-[70vh] min-h-[500px] w-full overflow-hidden">
-          <div className="absolute inset-0">
-            <Image
-              src="/1031-exchange-of-phoenix-az.jpg"
-              alt=""
-              fill
-              className="object-cover"
-              sizes="100vw"
-              priority
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent" />
-          </div>
-          
-          {/* Hero Content Overlay */}
-          <div className="relative z-10 flex h-full items-center">
-            <div className="mx-auto w-full max-w-7xl px-6 lg:px-8">
-              <div className="max-w-2xl">
+        <section className="relative min-h-[650px] w-full overflow-hidden lg:h-[78vh]">
+          <Image
+            src="/1031-exchange-of-phoenix-az.jpg"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/55 to-black/15" />
+          <div className="relative z-10 flex min-h-[650px] items-center lg:h-full">
+            <div className="mx-auto w-full max-w-7xl px-6 py-16 lg:px-8">
+              <div className="max-w-3xl">
                 <span className="section-label mb-4 inline-block text-white/80">
-                  Phoenix 1031 Exchange Specialists
+                  One Call. One Complete Phoenix Exchange Plan.
                 </span>
                 <h1 className="font-serif text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
-                  Expert 1031 Exchange Services in Phoenix, Arizona.
+                  Turnkey 1031 Exchange Solutions in Phoenix, AZ
                 </h1>
-                <p className="mt-6 text-lg text-white/90 sm:text-xl">
-                  Full-service 1031 exchange solutions for Arizona investors. Property identification, qualified intermediary guidance, deadline management, and tax deferral strategies for all property types.
+                <p className="mt-5 max-w-2xl text-lg leading-relaxed text-white/90 sm:text-xl">
+                  Sell a Greater Phoenix investment property with a clear path to the next one. Get help assembling the independent qualified intermediary, replacement-property search, direct or passive options, and closing team around one exchange plan.
+                </p>
+                <div className="mt-6 grid max-w-2xl gap-x-8 gap-y-3 text-sm text-white/90 sm:grid-cols-2 sm:text-base">
+                  {[
+                    "Request a free property list",
+                    "Compare direct, net-lease, and DST options",
+                    "Leave tenants, maintenance, and leasing behind",
+                    "Explore professionally managed institutional-grade real estate",
+                  ].map((item) => (
+                    <div key={item} className="flex items-start gap-3">
+                      <span className="mt-2 h-1.5 w-1.5 flex-none bg-mansion-gold" />
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-4 text-sm text-white/70">
+                  Some DST offerings may begin around $100,000. Availability, risks, fees, eligibility, liquidity, and suitability vary.
                 </p>
                 <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                   <Link
-                    href={`tel:${PHONE_NUMBER_URI}`}
+                    href="#contact-form"
                     className="inline-flex items-center justify-center gap-2 bg-mansion-gold px-8 py-4 text-base font-semibold text-white transition hover:bg-mansion-gold-dark"
-                    aria-label={`Call ${PHONE_NUMBER}`}
-                  >
-                    <PhoneIcon className="h-5 w-5" aria-hidden="true" />
-                    Call {PHONE_NUMBER}
-                  </Link>
-                  <Link
-                    href="#lead-form"
-                    className="inline-flex items-center justify-center gap-2 border-2 border-white bg-transparent px-8 py-4 text-base font-semibold text-white transition hover:bg-white hover:text-mansion-charcoal"
                   >
                     Start My Exchange
                     <ArrowRightIcon className="h-5 w-5" aria-hidden="true" />
                   </Link>
+                  <Link
+                    href={`tel:${PHONE_NUMBER_URI}`}
+                    className="inline-flex items-center justify-center gap-2 border-2 border-white bg-transparent px-8 py-4 text-base font-semibold text-white transition hover:bg-white hover:text-mansion-charcoal"
+                    aria-label={`Talk to a 1031 expert at ${PHONE_NUMBER}`}
+                  >
+                    <PhoneIcon className="h-5 w-5" aria-hidden="true" />
+                    Talk to an Expert: {PHONE_NUMBER}
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
-
         </section>
 
-        {/* Content container */}
         <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
-
-        {/* TOP STORIES Style Section - Why Choose Us */}
-        <section className="border-b border-gray-200 pb-16">
-          <p className="section-label mb-6">Why Choose Us</p>
-          <div className="grid gap-8 lg:grid-cols-2">
-            {/* Featured large card */}
-            <div className="group">
-              <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl lg:text-5xl">
-                Why Phoenix Investors Trust Us.
-              </h2>
-              <p className="mt-6 text-base leading-relaxed text-mansion-charcoal/70">A Phoenix owner may be selling because property operations are exhausting, insurance and capital work are changing returns, or too much equity sits in one desert-market asset. We help define what the replacement must do better and organize direct, net-lease, and passive paths before day 45.</p>
-              <div className="mt-6 border-t border-gray-200 pt-6 text-sm text-mansion-charcoal/60">
-                A 1031 exchange defers federal and Arizona income tax on qualifying
-                real property. It does not remove state or county transfer taxes.{" "}
-                <Link
-                  href="https://azdor.gov/transaction-privilege-tax"
-                  className="font-medium text-mansion-gold hover:text-mansion-gold-dark"
-                >
-                  Review Arizona Department of Revenue guidance
-                </Link>
+          <section className="border-b border-gray-200 pb-16">
+            <p className="section-label mb-6">Start With the Reason for Selling</p>
+            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+              <div>
+                <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl lg:text-5xl">
+                  What Should This Property Sale Solve?
+                </h2>
+                <p className="mt-6 text-base leading-relaxed text-mansion-charcoal/70">
+                  A successful exchange is not simply about replacing value. It should solve the problem that made the Phoenix property worth selling—too much management, concentrated equity, a difficult partnership, changing income needs, or an inherited asset that no longer fits.
+                </p>
+                <p className="mt-4 text-base leading-relaxed text-mansion-charcoal/70">
+                  We turn those priorities into a practical replacement brief before listings and deadlines begin driving the decision.
+                </p>
+                <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                  <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-mansion-navy px-6 py-3 text-sm font-semibold text-white transition hover:bg-mansion-navy-light">
+                    Get Free Exchange Guidance
+                    <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
+                  </Link>
+                  <Link href={`tel:${PHONE_NUMBER_URI}`} className="inline-flex items-center justify-center gap-2 border border-mansion-gold px-6 py-3 text-sm font-semibold text-mansion-gold transition hover:bg-mansion-gold hover:text-white">
+                    <PhoneIcon className="h-4 w-4" aria-hidden="true" />
+                    Call {PHONE_NUMBER}
+                  </Link>
+                </div>
+              </div>
+              <div className="grid gap-px bg-gray-200 sm:grid-cols-2">
+                {[
+                  ["Leave Day-to-Day Management", "Move beyond tenant calls, repairs, vacancies, leasing decisions, and capital projects."],
+                  ["Build a More Passive Income Strategy", "Compare ownership structures with different workloads, control, income profiles, and risks."],
+                  ["Diversify Concentrated Equity", "Evaluate whether one large Phoenix asset should become multiple properties, markets, or ownership interests."],
+                  ["Sell an Inherited or Misfit Property", "Organize basis, ownership, qualifying use, co-owner goals, and the next investment decision before closing."],
+                ].map(([title, description]) => (
+                  <article key={title} className="bg-white p-6 transition hover:bg-gray-50">
+                    <h3 className="font-serif text-xl text-mansion-charcoal">{title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-mansion-charcoal/70">{description}</p>
+                  </article>
+                ))}
               </div>
             </div>
-            {/* Feature cards grid */}
-            <div className="grid gap-4 sm:grid-cols-2">
-              {[
-                {
-                  title: "Property Identification",
-                  description:
-                    "Expert guidance finding replacement properties across all asset classes. Multifamily, retail, industrial, office, and more.",
-                  icon: MapPinIcon,
-                },
-                {
-                  title: "Qualified Intermediary Support",
-                  description:
-                    "We work with trusted QIs to ensure proper exchange structuring, fund segregation, and IRS compliance throughout your exchange.",
-                  icon: SearchIcon,
-                },
-                {
-                  title: "Deadline Management",
-                  description:
-                    "Never miss your 45-day identification or 180-day closing deadlines. Our timeline tools keep your exchange on track.",
-                  icon: ShieldCheckIcon,
-                },
-                {
-                  title: "Tax Deferral Strategy",
-                  description:
-                    "Maximize tax deferral through proper exchange structuring. Boot analysis, debt replacement planning, and advisor coordination.",
-                  icon: ClockIcon,
-                },
-              ].map((feature) => (
-                <div
-                  key={feature.title}
-                  className="group border border-gray-100 bg-white p-5 transition hover:border-mansion-gold/30 hover:shadow-editorial"
-                >
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-10 w-10 items-center justify-center bg-mansion-gold/10 text-mansion-gold">
-                      <feature.icon className="h-5 w-5" aria-hidden="true" />
-                    </div>
-                    <h3 className="font-serif text-lg text-mansion-charcoal">
-                      {feature.title}
-                    </h3>
-                  </div>
-                  <p className="mt-3 text-sm leading-relaxed text-mansion-charcoal/70">
-                    {feature.description}
-                  </p>
+          </section>
+
+          <section className="border-b border-gray-200 py-16">
+            <div className="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+              <div className="relative min-h-[440px] overflow-hidden">
+                <Image
+                  src="/images/blog/desert-modern.svg"
+                  alt="Professionally managed replacement property options for Phoenix investors"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 52vw"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-mansion-navy via-mansion-navy/90 to-transparent p-8 pt-24 text-white">
+                  <p className="section-label text-mansion-gold-light">A Different Kind of Replacement</p>
+                  <p className="mt-2 font-serif text-2xl">Own real estate without personally managing every moving part.</p>
                 </div>
+              </div>
+              <div>
+                <p className="section-label mb-3">Passive Replacement Options</p>
+                <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl">
+                  Leave Phoenix Property Management Behind.
+                </h2>
+                <p className="mt-5 text-base leading-relaxed text-mansion-charcoal/70">
+                  Selling can be the moment to get out of tenants, toilets, and trash—not sign up for the same workload in a different ZIP code. Compare three distinct paths against the income, control, management, financing, and diversification the next investment needs to deliver.
+                </p>
+                <div className="mt-7 space-y-5 border-l border-mansion-gold/40 pl-6">
+                  <div>
+                    <h3 className="font-serif text-xl">Direct Replacement Property</h3>
+                    <p className="mt-1 text-sm leading-relaxed text-mansion-charcoal/70">Keep direct control of leasing, financing, improvements, operations, and the future sale.</p>
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-xl">Single-Tenant Net-Lease Property</h3>
+                    <p className="mt-1 text-sm leading-relaxed text-mansion-charcoal/70">Retain direct ownership while the lease assigns specified property obligations to the tenant.</p>
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-xl">Professionally Managed DST</h3>
+                    <p className="mt-1 text-sm leading-relaxed text-mansion-charcoal/70">Access fractional ownership in institutional-grade real estate without day-to-day landlord decisions, subject to sponsor control, fees, risks, eligibility, and limited liquidity.</p>
+                  </div>
+                </div>
+                <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                  <Link href="/contact?request=properties" className="inline-flex items-center justify-center gap-2 bg-mansion-gold px-6 py-3 text-sm font-semibold text-white transition hover:bg-mansion-gold-dark">
+                    Get a Free Property List
+                    <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
+                  </Link>
+                  <Link href={`tel:${PHONE_NUMBER_URI}`} className="inline-flex items-center justify-center gap-2 border border-mansion-charcoal/25 px-6 py-3 text-sm font-semibold transition hover:border-mansion-gold hover:text-mansion-gold">
+                    <PhoneIcon className="h-4 w-4" aria-hidden="true" />
+                    Discuss Passive Options
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="border-b border-gray-200 py-16">
+            <p className="section-label mb-6">From Sale Plan to Replacement Closing</p>
+            <header className="max-w-3xl">
+              <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl">How a Phoenix 1031 Exchange Moves Forward.</h2>
+              <p className="mt-4 text-base leading-relaxed text-mansion-charcoal/70">The exchange calendar matters, but the story begins with a sale decision and ends with a replacement that can actually close.</p>
+            </header>
+            <div className="mt-10 grid gap-px bg-gray-200 sm:grid-cols-2 lg:grid-cols-4">
+              {[
+                ["Before You Sell", "Clarify ownership, use, basis questions, expected equity, debt, management goals, and the professionals already involved.", LandmarkIcon],
+                ["Once Under Contract", "Engage an independent qualified intermediary before closing and align escrow, title, lender, and document requirements.", CalendarIcon],
+                ["During Property Search", "Compare primary and backup candidates for income, control, workload, diligence, financing, risk, and closing probability.", SearchIcon],
+                ["Through Replacement Closing", "Keep title, inspections, insurance, financing, funding instructions, and advisor questions moving toward one finish line.", ShieldCheckIcon],
+              ].map(([title, description, Icon]) => {
+                const ProcessIcon = Icon as typeof LandmarkIcon;
+                return (
+                  <article key={title as string} className="bg-white p-7">
+                    <div className="flex h-11 w-11 items-center justify-center bg-mansion-gold/10 text-mansion-gold">
+                      <ProcessIcon className="h-5 w-5" aria-hidden="true" />
+                    </div>
+                    <h3 className="mt-5 font-serif text-xl">{title as string}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-mansion-charcoal/70">{description as string}</p>
+                  </article>
+                );
+              })}
+            </div>
+            <div className="mt-8 flex flex-col gap-4 bg-mansion-navy p-7 text-white sm:flex-row sm:items-center sm:justify-between">
+              <div>
+                <p className="font-serif text-2xl">Is this your first 1031 exchange?</p>
+                <p className="mt-2 text-sm text-white/75">Talk through the sale, timing, property choices, and next steps with a Phoenix 1031 expert.</p>
+              </div>
+              <Link href={`tel:${PHONE_NUMBER_URI}`} className="inline-flex flex-none items-center justify-center gap-2 bg-mansion-gold px-6 py-3 text-sm font-semibold text-white transition hover:bg-mansion-gold-dark">
+                <PhoneIcon className="h-4 w-4" aria-hidden="true" />
+                Call {PHONE_NUMBER}
+              </Link>
+            </div>
+          </section>
+
+          <section className="border-b border-gray-200 py-16">
+            <header className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+              <div className="max-w-3xl">
+                <p className="section-label mb-3">Phoenix 1031 Exchange Solutions</p>
+                <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl">The Help Property Owners Actually Need.</h2>
+                <p className="mt-4 text-base leading-relaxed text-mansion-charcoal/70">Free guidance begins with the planned sale, then brings the replacement search and independent specialists into a workable path.</p>
+              </div>
+              <Link href="/services" className="inline-flex items-center gap-2 text-sm font-semibold text-mansion-gold hover:text-mansion-gold-dark">View All Solutions<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
+            </header>
+            <div className="grid gap-px bg-gray-200 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                ["Turnkey 1031 Exchange Solutions", "Build one sale-to-replacement plan around the transaction, calendar, property search, and independent professional team.", "/services/forward-exchange-coordination"],
+                ["Replacement Property Search", "Create a practical brief and compare direct, net-lease, local, and nationwide replacement candidates.", "/services/replacement-property-shortlist"],
+                ["DST and Passive Replacement Options", "Review professionally managed real estate choices for owners seeking less day-to-day property responsibility.", "/services/dst-placement-advisory"],
+                ["Qualified Intermediary Introduction", "Connect with an independent QI before closing so proceeds and exchange documents are handled correctly.", "/services/qualified-intermediary-coordination"],
+                ["Inherited Investment Property", "Organize ownership, use, basis questions, co-owner priorities, and disposition choices before a sale advances.", "/services/inherited-property-capital-gains"],
+                ["Reverse and Improvement Exchange Solutions", "Explore more complex acquisition timing or property-improvement needs with the right specialists involved early.", "/services/reverse-exchange-structuring"],
+              ].map(([title, description, href]) => (
+                <Link key={title} href={href} className="group flex min-h-56 flex-col justify-between bg-white p-7 transition hover:bg-gray-50">
+                  <div>
+                    <h3 className="font-serif text-xl">{title}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-mansion-charcoal/70">{description}</p>
+                  </div>
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-mansion-gold">Learn More<ArrowRightIcon className="h-4 w-4 transition group-hover:translate-x-1" aria-hidden="true" /></span>
+                </Link>
               ))}
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* How It Works Section - Editorial style */}
-        <section className="border-b border-gray-200 py-16">
-          <p className="section-label mb-6">The Process</p>
-          <header className="mb-10 max-w-3xl">
-            <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl">
-              How the 1031 Exchange Works.
-            </h2>
-            <p className="mt-4 text-base text-mansion-charcoal/70">
-              Each stage demands clear documentation, segregation of proceeds,
-              and milestone precision.
-            </p>
-          </header>
-          <div className="grid gap-px bg-gray-200 md:grid-cols-3">
-            {[
-              {
-                title: "Sell the Relinquished Property",
-                description:
-                  "Funds held by a qualified intermediary.",
-                icon: LandmarkIcon,
-              },
-              {
-                title: "Identify Replacements Within 45 Days",
-                description:
-                  "Submit formal identification list.",
-                icon: MapPinIcon,
-              },
-              {
-                title: "Close Within 180 Days",
-                description:
-                  "Acquire replacement under IRS rules.",
-                icon: CalendarIcon,
-              },
-            ].map((step, index) => (
-              <div
-                key={step.title}
-                className="relative bg-white p-8"
-              >
-                <div className="flex items-center gap-4">
-                  <span className="font-serif text-4xl text-mansion-gold">
-                    0{index + 1}
-                  </span>
-                  <div className="flex h-10 w-10 items-center justify-center bg-mansion-gold/10 text-mansion-gold">
-                    <step.icon className="h-5 w-5" aria-hidden="true" />
-                  </div>
-                </div>
-                <h3 className="mt-6 font-serif text-xl text-mansion-charcoal">
-                  {step.title}
-                </h3>
-                <p className="mt-3 text-sm text-mansion-charcoal/70">
-                  {step.description}
-                </p>
+          <section className="border-b border-gray-200 py-16">
+            <header className="mb-8 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+              <div className="max-w-3xl">
+                <p className="section-label mb-3">Greater Phoenix and Nationwide Options</p>
+                <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl">Start Locally. Search for the Right Replacement Nationally.</h2>
+                <p className="mt-4 text-base leading-relaxed text-mansion-charcoal/70">Get local help with a Phoenix-area sale while comparing replacement property in Arizona and qualifying markets across the country.</p>
               </div>
-            ))}
-          </div>
-          <div className="mt-8 flex flex-col gap-4 border border-mansion-gold/20 bg-mansion-gold/5 p-6 text-sm text-mansion-charcoal/80 sm:flex-row sm:items-center sm:justify-between">
-            <div>
-              <p className="font-semibold text-mansion-gold-dark">
-                Learn more in IRS Form 8824 and Like-Kind Property rules.
-              </p>
-              <div className="mt-2 flex flex-wrap gap-4">
-                <Link
-                  href="https://www.irs.gov/forms-pubs/about-form-8824"
-                  className="text-mansion-gold hover:text-mansion-gold-dark"
-                >
-                  IRS Form 8824 &rarr;
-                </Link>
-                <Link
-                  href="https://www.irs.gov/businesses/small-businesses-self-employed/like-kind-exchanges-real-estate-tax-tips"
-                  className="text-mansion-gold hover:text-mansion-gold-dark"
-                >
-                  IRS Like-Kind Exchange Tips &rarr;
-                </Link>
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <Link href="/locations" className="inline-flex items-center justify-center gap-2 border border-mansion-charcoal/20 px-5 py-3 text-sm font-semibold transition hover:border-mansion-gold hover:text-mansion-gold">View All Markets</Link>
+                <Link href="/contact?request=properties" className="inline-flex items-center justify-center gap-2 bg-mansion-gold px-5 py-3 text-sm font-semibold text-white transition hover:bg-mansion-gold-dark">Get a Free Property List<ArrowRightIcon className="h-4 w-4" aria-hidden="true" /></Link>
               </div>
+            </header>
+            <HomepageServiceArea locations={locations} />
+          </section>
+
+          <section className="border-b border-gray-200 py-16">
+            <header className="mb-10 max-w-3xl">
+              <p className="section-label mb-3">Planning Resources</p>
+              <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl">Use the Tools When the Transaction Needs Them.</h2>
+              <p className="mt-4 text-base leading-relaxed text-mansion-charcoal/70">These focused resources can help frame questions for the qualified intermediary, CPA, attorney, lender, and closing team without distracting from the property decision.</p>
+            </header>
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {[
+                ["Boot Calculator", "Model cash received and mortgage relief to prepare better questions for a tax advisor.", "/tools/boot-calculator", ScaleIcon],
+                ["Exchange Cost Estimator", "Outline potential intermediary and transaction costs before the replacement plan is finalized.", "/tools/exchange-cost-estimator", CalculatorIcon],
+                ["Identification Rules Checker", "Review a proposed identification list before it is delivered through the proper exchange process.", "/tools/identification-rules-checker", ClockIcon],
+              ].map(([title, description, href, Icon]) => {
+                const ToolIcon = Icon as typeof ScaleIcon;
+                return (
+                  <Link key={title as string} href={href as string} className="group bg-mansion-navy p-7 text-white transition hover:bg-mansion-navy-light">
+                    <ToolIcon className="h-9 w-9 text-mansion-gold" aria-hidden="true" />
+                    <h3 className="mt-5 font-serif text-xl text-white">{title as string}</h3>
+                    <p className="mt-3 text-sm leading-relaxed text-white/75">{description as string}</p>
+                    <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-mansion-gold-light">Open Tool<ArrowRightIcon className="h-4 w-4 transition group-hover:translate-x-1" aria-hidden="true" /></span>
+                  </Link>
+                );
+              })}
             </div>
-            <p className="text-xs text-mansion-charcoal/60">
-              See Rev. Proc. 2008-16 for vacation home safe harbor.
-            </p>
-          </div>
-        </section>
+          </section>
 
-        {/* Services Section - Mansion Global editorial style */}
-        <section className="border-b border-gray-200 py-16">
-          <header className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-            <div className="max-w-2xl">
-              <p className="section-label mb-3">Our Services</p>
-              <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl">Complete Phoenix 1031 Exchange Solutions.</h2>
-              <p className="mt-4 text-base text-mansion-charcoal/70">
-                From initial consultation to closing, we provide comprehensive support for your 1031 exchange. Property identification, QI support, and deadline management for all property types.
-              </p>
+          <section className="border-b border-gray-200 py-16">
+            <p className="section-label mb-3">Phoenix 1031 Exchange FAQ</p>
+            <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl">Questions Property Owners Ask Before They Sell.</h2>
+            <div className="mt-10 divide-y divide-gray-200">
+              {faqs.map((faq) => (
+                <details key={faq.question} className="group py-6">
+                  <summary className="flex cursor-pointer items-center justify-between gap-4 text-lg text-mansion-charcoal">
+                    <span className="font-serif">{faq.question}</span>
+                    <span className="flex h-8 w-8 flex-none items-center justify-center border border-gray-300 text-mansion-gold transition group-open:rotate-45 group-open:border-mansion-gold">
+                      <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
+                    </span>
+                  </summary>
+                  <p className="mt-4 max-w-4xl pr-12 text-sm leading-relaxed text-mansion-charcoal/70">{faq.answer}</p>
+                </details>
+              ))}
             </div>
-            <Link
-              href="/services"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-mansion-gold hover:text-mansion-gold-dark"
-            >
-              View all services
-              <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
-            </Link>
-          </header>
-          <HomepageServiceGrid services={highlightedServices as Service[]} />
-        </section>
+          </section>
 
-        {/* Property Types - Mansion Global "Latest in Lifestyle" horizontal scroll style */}
-        <section className="border-b border-gray-200 py-16">
-          <header className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-            <div className="max-w-2xl">
-              <p className="section-label mb-3">Property Types</p>
-              <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl">
-                Replacement Property Without Daily Management
-              </h2>
-              <p className="mt-4 text-base text-mansion-charcoal/70">DST ownership may give Phoenix sellers fractional access to professionally managed, institutional-quality real estate with no day-to-day tenant or maintenance decisions. Certain offerings may begin near $100,000; minimums, availability, projected distributions, fees, leverage, sponsor and property risk, liquidity limits, eligibility, and suitability vary.</p>
+          <section id="contact-form" className="py-16">
+            <div className="mx-auto max-w-4xl">
+              <p className="section-label mb-3 text-center">Free Phoenix Exchange Guidance</p>
+              <LeadForm />
             </div>
-            <Link
-              href="/contact?request=guide"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-mansion-gold hover:text-mansion-gold-dark"
-            >Get Free Phoenix 1031 Information<ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
-            </Link>
-          </header>
-          
-          {/* Horizontal scrolling carousel - Mansion Global style */}
-          <HomepagePropertyTypes propertyTypes={propertyTypes} />
-        </section>
-
-        {/* Explore Top Markets - Mansion Global style city cards */}
-        <section className="border-b border-gray-200 py-16">
-          <header className="mb-8">
-            <p className="section-label mb-3">Service Areas</p>
-            <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl">
-              Phoenix Metro 1031 Exchange Services.
-            </h2>
-            <p className="mt-4 max-w-3xl text-base text-mansion-charcoal/70">
-              Comprehensive 1031 exchange support across the Phoenix metropolitan area. From downtown Phoenix to Scottsdale, Tempe, and the East Valley, we help Arizona investors navigate their tax-deferred exchanges.
-            </p>
-          </header>
-          <HomepageServiceArea locations={locations} />
-        </section>
-
-        {/* Resources Section - Editorial style cards */}
-        <section className="py-16">
-          <p className="section-label mb-8">Resources</p>
-          <div className="grid gap-px bg-gray-200 md:grid-cols-2">
-            <Link
-              href="/resources/calculator"
-              className="group flex h-full flex-col justify-between bg-white p-8 transition hover:bg-gray-50"
-            >
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center bg-mansion-gold/10 text-mansion-gold">
-                  <CalculatorIcon className="h-6 w-6" aria-hidden="true" />
-                </div>
-                <h3 className="font-serif text-2xl text-mansion-charcoal">
-                  Capital Gains Estimator
-                </h3>
-              </div>
-              <p className="mt-4 text-sm text-mansion-charcoal/70">
-                Model potential liability, boot exposure, and reinvestment targets
-                before committing to the exchange.
-              </p>
-              <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-mansion-gold">
-                Open estimator
-                <ArrowRightIcon
-                  className="h-4 w-4 transition group-hover:translate-x-1"
-                  aria-hidden="true"
-                />
-              </span>
-            </Link>
-            <Link
-              href="/resources/timeline"
-              className="group flex h-full flex-col justify-between bg-white p-8 transition hover:bg-gray-50"
-            >
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center bg-mansion-gold/10 text-mansion-gold">
-                  <ClockIcon className="h-6 w-6" aria-hidden="true" />
-                </div>
-                <h3 className="font-serif text-2xl text-mansion-charcoal">
-                  Timeline Reminders
-                </h3>
-              </div>
-              <p className="mt-4 text-sm text-mansion-charcoal/70">
-                Receive calendar prompts for the 45 day identification and 180 day
-                completion milestones.
-              </p>
-              <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-mansion-gold">
-                Schedule reminders
-                <ArrowRightIcon
-                  className="h-4 w-4 transition group-hover:translate-x-1"
-                  aria-hidden="true"
-                />
-              </span>
-            </Link>
-          </div>
-        </section>
-
-        {/* Widgets Section */}
-        <section className="border-b border-gray-200 py-16">
-          <p className="section-label mb-8">Planning Tools</p>
-          <div className="grid gap-6 lg:grid-cols-2">
-            <DeadlineCalculator />
-            <TimelineTracker />
-          </div>
-          <div className="mt-6">
-            <IdentificationRules />
-          </div>
-        </section>
-
-        {/* Exchange Tools Section - Mansion Global featured style */}
-        <section className="border-b border-gray-200 py-16">
-          <header className="mb-10">
-            <p className="section-label mb-3">Exchange Tools</p>
-            <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl">
-              Exchange Tools
-            </h2>
-            <p className="mt-4 text-base text-mansion-charcoal/70">
-              Interactive calculators to help you understand boot, estimate costs, and validate
-              identification compliance.
-            </p>
-          </header>
-          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            <Link
-              href="/tools/boot-calculator"
-              className="group relative overflow-hidden bg-mansion-navy p-6 text-white transition hover:bg-mansion-navy-light"
-            >
-              <ScaleIcon className="mb-4 h-10 w-10 text-mansion-gold" aria-hidden="true" />
-              <h3 className="mb-2 font-serif text-xl text-white">Boot Calculator</h3>
-              <p className="text-sm text-white/80">
-                Calculate boot including cash received and mortgage relief, and estimate tax
-                implications.
-              </p>
-              <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-mansion-gold-light">
-                Use Calculator
-                <ArrowRightIcon
-                  className="h-4 w-4 transition group-hover:translate-x-1"
-                  aria-hidden="true"
-                />
-              </span>
-            </Link>
-            <Link
-              href="/tools/exchange-cost-estimator"
-              className="group relative overflow-hidden bg-mansion-navy p-6 text-white transition hover:bg-mansion-navy-light"
-            >
-              <CalculatorIcon className="mb-4 h-10 w-10 text-mansion-gold" aria-hidden="true" />
-              <h3 className="mb-2 font-serif text-xl text-white">Exchange Cost Estimator</h3>
-              <p className="text-sm text-white/80">
-                Estimate qualified intermediary fees, escrow costs, title insurance, and
-                recording fees.
-              </p>
-              <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-mansion-gold-light">
-                Use Calculator
-                <ArrowRightIcon
-                  className="h-4 w-4 transition group-hover:translate-x-1"
-                  aria-hidden="true"
-                />
-              </span>
-            </Link>
-            <Link
-              href="/tools/identification-rules-checker"
-              className="group relative overflow-hidden bg-mansion-navy p-6 text-white transition hover:bg-mansion-navy-light"
-            >
-              <ShieldCheckIcon className="mb-4 h-10 w-10 text-mansion-gold" aria-hidden="true" />
-              <h3 className="mb-2 font-serif text-xl text-white">
-                Identification Rules Checker
-              </h3>
-              <p className="text-sm text-white/80">
-                Validate your identification against the three property, two hundred percent, or
-                ninety five percent rules.
-              </p>
-              <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-mansion-gold-light">
-                Use Checker
-                <ArrowRightIcon
-                  className="h-4 w-4 transition group-hover:translate-x-1"
-                  aria-hidden="true"
-                />
-              </span>
-            </Link>
-          </div>
-          <div className="mt-8 flex justify-center">
-            <Link
-              href="/contact?request=properties"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-mansion-gold hover:text-mansion-gold-dark"
-            >Request the Phoenix Property List<ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
-            </Link>
-          </div>
-        </section>
-
-        {/* FAQ Section - Clean editorial style */}
-        <section className="border-b border-gray-200 py-16">
-          <p className="section-label mb-3">FAQ</p>
-          <h2 className="font-serif text-3xl text-mansion-charcoal sm:text-4xl">
-            Frequently Asked Questions.
-          </h2>
-          <div className="mt-10 divide-y divide-gray-200">
-            {faqs.map((faq, index) => (
-              <details
-                key={faq.question}
-                className="group py-6"
-              >
-                <summary className="flex cursor-pointer items-center justify-between gap-4 text-lg text-mansion-charcoal">
-                  <span className="font-serif">
-                    {faq.question}
-                  </span>
-                  <span className="flex h-8 w-8 flex-none items-center justify-center border border-gray-300 text-mansion-gold transition group-open:rotate-45 group-open:border-mansion-gold">
-                    <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" /></svg>
-                  </span>
-                </summary>
-                <p className="mt-4 pr-12 text-sm leading-relaxed text-mansion-charcoal/70">{faq.answer}</p>
-              </details>
-            ))}
-          </div>
-        </section>
-
-        {/* Lead Form Section */}
-        <section id="contact-form" className="py-16">
-          <div className="mx-auto max-w-4xl">
-            <p className="section-label mb-3 text-center">Get Started</p>
-            <LeadForm />
-          </div>
-        </section>
-
-        {/* Close content container */}
+          </section>
         </div>
       </main>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(professionalServiceJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
-      />
+      {[organizationJsonLd, localBusinessJsonLd, professionalServiceJsonLd, websiteJsonLd, faqJsonLd].map((data, index) => (
+        <script key={index} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+      ))}
     </div>
   );
 }

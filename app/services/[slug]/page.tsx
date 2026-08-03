@@ -9,11 +9,12 @@ import {
 } from "@/lib/services";
 import {
   COMPANY_NAME,
+  PHONE_NUMBER,
+  PHONE_NUMBER_URI,
   PRIMARY_CITY,
-  PRIMARY_STATE_ABBR,
   SITE_DOMAIN,
 } from "@/lib/config";
-import { ArrowRightIcon } from "@/components/icons";
+import { ArrowRightIcon, PhoneIcon } from "@/components/icons";
 import { getServiceBatchData } from "@/lib/data-merger";
 
 type Props = {
@@ -56,8 +57,6 @@ export default async function ServicePage({ params }: Props) {
 
   const batchData = getServiceBatchData(slug);
   const relatedServices = getRelatedServices(slug, 4);
-  const allServices = getAllServices();
-
   return (
     <div className="min-h-screen bg-white">
       <div className="mx-auto max-w-7xl px-6 pb-24 pt-8 lg:px-8">
@@ -207,19 +206,21 @@ export default async function ServicePage({ params }: Props) {
 
           <div className="mt-16 border border-gray-200 bg-white p-10 text-center shadow-editorial">
             <h2 className="font-serif text-3xl text-mansion-charcoal">
-              Ready to get started?
+              Compare Replacement Properties for This Exchange
             </h2>
             <p className="mt-4 text-base text-mansion-charcoal/70">
-              Discuss your exchange timeline and replacement objectives with our{" "}
-              {PRIMARY_CITY} team.
+              Discuss the planned sale and compare direct property, net-lease, and available DST options against the same {PRIMARY_CITY} exchange objectives.
             </p>
-            <Link
-              href={`/contact?projectType=${encodeURIComponent(service.name)}#project-type`}
-              className="mt-6 inline-flex items-center justify-center gap-2 bg-mansion-gold px-6 py-3 text-base font-semibold text-white transition hover:bg-mansion-gold-dark"
-            >
-              Request Consultation
-              <ArrowRightIcon className="h-5 w-5" />
-            </Link>
+            <div className="mt-6 flex flex-col justify-center gap-3 sm:flex-row">
+              <Link href="/contact?request=properties" className="inline-flex items-center justify-center gap-2 bg-mansion-gold px-6 py-3 text-base font-semibold text-white transition hover:bg-mansion-gold-dark">
+                Get a Free Property List
+                <ArrowRightIcon className="h-5 w-5" aria-hidden="true" />
+              </Link>
+              <Link href={`tel:${PHONE_NUMBER_URI}`} className="inline-flex items-center justify-center gap-2 border border-mansion-gold px-6 py-3 text-base font-semibold text-mansion-gold transition hover:bg-mansion-gold hover:text-white">
+                <PhoneIcon className="h-5 w-5" aria-hidden="true" />
+                Call {PHONE_NUMBER}
+              </Link>
+            </div>
           </div>
         </article>
       </div>
